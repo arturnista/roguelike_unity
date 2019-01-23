@@ -8,6 +8,7 @@ public class HUDHealthBarDisplay : MonoBehaviour
     
     public FloatReference MaxHealth;
     public FloatReference Health;
+    public AnimationCurve DisplayCurve;
 
     private Image image;
 
@@ -18,7 +19,7 @@ public class HUDHealthBarDisplay : MonoBehaviour
 
     void Update()
     {
-        float size = Health.Value / MaxHealth.Value;
+        float size = DisplayCurve.Evaluate(Health.Value / MaxHealth.Value);
         image.rectTransform.localScale = new Vector3(size, 1f, 1f);
     }
 

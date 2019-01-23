@@ -10,7 +10,7 @@ public class EnemyTargetDetector : MonoBehaviour
     [SerializeField]
     public FloatReference Range;
     [SerializeField]
-    public LayerMask ObstacleLayer;
+    public LayerMaskReference ObstacleLayer;
 #endregion
 
 #region Variables
@@ -41,7 +41,7 @@ public class EnemyTargetDetector : MonoBehaviour
                 foreach(Transform possible in possibleTargers)
                 {
 
-                    RaycastHit2D[] hits = Physics2D.LinecastAll(transform.position, possible.position, ObstacleLayer);
+                    RaycastHit2D[] hits = Physics2D.LinecastAll(transform.position, possible.position, ObstacleLayer.Value);
                     if(hits.Length == 0)
                     {
                         Target.Value = possible;

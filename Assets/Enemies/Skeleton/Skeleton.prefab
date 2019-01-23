@@ -272,11 +272,11 @@ MonoBehaviour:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 0c4a9c653a4f11c4091c8ab522eb85fc, type: 2}
+  ProjectilePrefab: {fileID: 6962232131117010515, guid: bc2432ff26f5ab04b89e7f1fb28b03f2, type: 3}
   AttackDelay:
     Type: 2
     ConstantValue: 0
     Variable: {fileID: 0}
-  ProjectilePrefab: {fileID: 6962232131117010515, guid: bc2432ff26f5ab04b89e7f1fb28b03f2, type: 3}
   Target:
     Type: 2
     ConstantValue: {fileID: 0}
@@ -346,8 +346,11 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 3658eb03a500b8b4daacb7ee81d00326, type: 2}
   ObstacleLayer:
-    serializedVersion: 2
-    m_Bits: 5376
+    Type: 1
+    ConstantValue:
+      serializedVersion: 2
+      m_Bits: 0
+    Variable: {fileID: 11400000, guid: f40f467f2e89c30428042e47cd303fb2, type: 2}
   Target:
     Type: 2
     ConstantValue: {fileID: 0}

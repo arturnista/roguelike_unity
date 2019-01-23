@@ -279,8 +279,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Holder: {fileID: 11400000, guid: 6fa396b738dd9814196b59d77ddbcca6, type: 2}
   AttackLayer:
-    serializedVersion: 2
-    m_Bits: 50176
+    Type: 1
+    ConstantValue:
+      serializedVersion: 2
+      m_Bits: 0
+    Variable: {fileID: 11400000, guid: 0dcda7d66b88e334eb0222101978097b, type: 2}
   UnableToMove:
     Type: 1
     ConstantValue: 1

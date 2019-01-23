@@ -51,25 +51,24 @@ public class EnemySpreadVariable : MonoBehaviour
         Target = ScriptableObject.Instantiate(Target);
 
         EnemyMovement movement = GetComponent<EnemyMovement>();
-        EnemyHealth health = GetComponent<EnemyHealth>();
-        EnemyAttack attack = GetComponent<EnemyAttack>();
-        EnemyTargetDetector target = GetComponentInChildren<EnemyTargetDetector>();
-
         movement.Direction.InstanceVariable = Direction;
         movement.Velocity.InstanceVariable = Velocity;
         movement.DesirableVelocity.InstanceVariable = DesirableVelocity;
         movement.UnableToMove.InstanceVariable = UnableToMove;
         movement.Target.InstanceVariable = Target;
 
+        EnemyHealth health = GetComponent<EnemyHealth>();
         health.Health.InstanceVariable = Health;
         health.Resistence.InstanceVariable = Resistence;
         health.Velocity.InstanceVariable = Velocity;
         health.Target.InstanceVariable = Target;
         health.AttackDelay.InstanceVariable = AttackDelay;
 
+        EnemyAttack attack = GetComponent<EnemyAttack>();
         attack.Target.InstanceVariable = Target;
         attack.AttackDelay.InstanceVariable = AttackDelay;
 
+        EnemyTargetDetector target = GetComponentInChildren<EnemyTargetDetector>();
         target.Target.InstanceVariable = Target;
     }
 

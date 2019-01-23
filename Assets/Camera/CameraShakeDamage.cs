@@ -27,6 +27,6 @@ public class CameraShakeDamage : MonoBehaviour
     }
 
     void ShakeCamera(float amount) {
-        CameraShaker.Instance.ShakeOnce(2f, amount / 5f, .1f, .5f);
+        CameraShaker.Instance.ShakeOnce(2f, amount / 5f, 0.1f, .5f);
     }
 }

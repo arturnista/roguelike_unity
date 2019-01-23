@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HUDDamageTakeDisplay : MonoBehaviour
+public class HUDChangeLifeDisplay : MonoBehaviour
 {
     
     public FloatReference Health;
-    public Color damageColor;
+    public float EffectRate;
+    public Color DamageColor;
+    public Color GainColor;
 
     private Image damageDisplayImage;
     private float lastHealth;
@@ -16,7 +18,10 @@ public class HUDDamageTakeDisplay : MonoBehaviour
     {
         damageDisplayImage = GetComponent<Image>();
         damageDisplayImage.enabled = false;
-        
+    }
+
+    void Start()
+    {
         lastHealth = Health.Value;
     }
 
@@ -24,18 +29,18 @@ public class HUDDamageTakeDisplay : MonoBehaviour
     {
         if(lastHealth != Health.Value)
         {
+            StartCoroutine(EffectDisplay(lastHealth > Health.Value));
             lastHealth = Health.Value;
-            StartCoroutine(EffectDisplay());
         }
     }
 
-    IEnumerator EffectDisplay() {
-        damageDisplayImage.color = damageColor;
+    IEnumerator EffectDisplay(bool damaged) {
+        damageDisplayImage.color = damaged ? DamageColor : GainColor;
         damageDisplayImage.enabled = true;
 
         while(damageDisplayImage.color.a > 0) {
             Color color = damageDisplayImage.color;
-            color.a -= Time.deltaTime;
+            color.a -= Time.deltaTime * EffectRate;
             damageDisplayImage.color = color;
             
             yield return null;

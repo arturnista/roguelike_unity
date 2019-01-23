@@ -9,10 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcac03f350d8a924b8cdda054309202d, type: 3}
-  m_Name: PlayerHealth
+  m_Script: {fileID: 11500000, guid: 4a787eca27e4ffa449f335a9f4617c82, type: 3}
+  m_Name: PlayerAttackLayerMask
   m_EditorClassIdentifier: 
   Description: 
-  DefaultValue: 100
+  DefaultValue:
+    serializedVersion: 2
+    m_Bits: 0
   ResetOnPlay: 1
-  value: 125.66
+  value:
+    serializedVersion: 2
+    m_Bits: 0
