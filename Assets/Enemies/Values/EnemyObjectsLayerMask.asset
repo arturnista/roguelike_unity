@@ -15,8 +15,8 @@ MonoBehaviour:
   Description: 
   DefaultValue:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1792
   ResetOnPlay: 1
   value:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1792
