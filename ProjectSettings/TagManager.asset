@@ -14,18 +14,18 @@ TagManager:
   - 
   - 
   - Ground
-  - Player
+  - Walls
   - Props
+  - 
+  - 
+  - 
   - Enemies
+  - EnemiesProjectile
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - PlayerProjectile
   - 
   - 
   - 

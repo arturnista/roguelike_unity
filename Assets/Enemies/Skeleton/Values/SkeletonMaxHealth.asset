@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SkeletonMaxHealth
   m_EditorClassIdentifier: 
   Description: 
-  DefaultValue: 100
+  DefaultValue: 30
   value: 100

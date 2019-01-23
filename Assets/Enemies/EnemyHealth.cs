@@ -5,13 +5,16 @@ using UnityEngine;
 public class EnemyHealth : Destructible
 {
 
+    [Header("Enemy")]
     [SerializeField]
-    public Vector2Reference Velocity;
+    public TransformReference Target;
+    [SerializeField]
+    public FloatReference AttackDelay;
 
-    public override void DealDamage(float damage, RaycastHit2D hit) {
-        base.DealDamage(damage, hit);
-
-        Velocity.Value += -hit.normal * damage;
+    public override void DealDamage(float damage, RaycastHit2D hit, Transform damager) {
+        base.DealDamage(damage, hit, damager);
+        Target.Value = damager;
+        AttackDelay.ResetValue();
     }
 
 }

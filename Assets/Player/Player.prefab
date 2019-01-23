@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4150661908553881202}
   - component: {fileID: 4150661908553881205}
-  m_Layer: 9
+  m_Layer: 19
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8408525943273137788}
   - component: {fileID: 8731974200997013575}
   - component: {fileID: 3765784410234824714}
-  m_Layer: 9
+  m_Layer: 19
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.8, y: 1}
+  m_Size: {x: 0.8, y: 0.8}
   m_Direction: 0
 --- !u!114 &4150661908869239633
 MonoBehaviour:
@@ -251,6 +251,7 @@ MonoBehaviour:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 09370d2eafa3eba4782a52a0f44520c8, type: 2}
+  StartWithMaxHealth: 0
   Health:
     Type: 1
     ConstantValue: 0
@@ -259,6 +260,11 @@ MonoBehaviour:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 59694cc6b00e6dc45a9bf20f3b9a476f, type: 2}
+  Velocity:
+    Type: 1
+    ConstantValue: {x: 0, y: 0}
+    Variable: {fileID: 11400000, guid: d9e705b00571afa4eb16cb05e2c5f793, type: 2}
+  ImpactEffect: {fileID: 476582336847252379, guid: e6fec3bdf64353d4f836a1588bfde6e0, type: 3}
 --- !u!114 &3765784410234824714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,7 +280,7 @@ MonoBehaviour:
   Holder: {fileID: 11400000, guid: 6fa396b738dd9814196b59d77ddbcca6, type: 2}
   AttackLayer:
     serializedVersion: 2
-    m_Bits: 3072
+    m_Bits: 50176
   UnableToMove:
     Type: 1
     ConstantValue: 1
@@ -288,4 +294,3 @@ MonoBehaviour:
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: d9e705b00571afa4eb16cb05e2c5f793, type: 2}
   AttackEffect: {fileID: 8873751900456621632, guid: ab60f91dbdf586a438c0448c248609e1, type: 3}
-  ImpactEffect: {fileID: 476582336847252379, guid: e6fec3bdf64353d4f836a1588bfde6e0, type: 3}

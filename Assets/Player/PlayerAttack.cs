@@ -27,8 +27,6 @@ public class PlayerAttack : MonoBehaviour
     [Header("Effects")]
     [SerializeField]
     private GameObject AttackEffect;
-    [SerializeField]
-    private GameObject ImpactEffect;
 #endregion
 
     private bool canAttack = true;
@@ -44,11 +42,11 @@ public class PlayerAttack : MonoBehaviour
     public void Attack() {
         if(!canAttack) return;
         
-        Velocity.Value += LookDirection.Value * 5f;
+        Velocity.Value += LookDirection.Value * 10f;
 
         if(AttackEffect) {
             float angle = Mathf.Atan2(LookDirection.Value.y, LookDirection.Value.x) * Mathf.Rad2Deg;
-            Instantiate(AttackEffect, transform.position + (Vector3)LookDirection.Value, Quaternion.Euler(0f, 0f, angle - 90));
+            Instantiate(AttackEffect, transform.position + (Vector3)LookDirection.Value, Quaternion.Euler(0f, 0f, angle - 90)).transform.parent = transform;
         }
 
         float attackRadius = 0.5f;
@@ -57,8 +55,7 @@ public class PlayerAttack : MonoBehaviour
             foreach(RaycastHit2D hit in hits) {
                 Destructible hitDestructible = hit.transform.GetComponent<Destructible>();
                 if(hitDestructible != null) {
-                    hitDestructible.DealDamage(Holder.CurrentSword.Damage, hit);
-                    if(ImpactEffect) Instantiate(ImpactEffect, hit.point, Quaternion.identity);
+                    hitDestructible.DealDamage(Holder.CurrentSword.Damage, hit, transform);
                 }
             }
         }

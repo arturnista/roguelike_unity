@@ -35,13 +35,21 @@ public class UnitMovement : MonoBehaviour
 
     protected virtual void Update()
     {
-        
-        if(!UnableToMove.Value) DesirableVelocity.Value = Direction.Normalized * MoveSpeed.Value;
-        else DesirableVelocity.Value = Vector2.zero;
 
-        Vector2 velocity = Velocity.Value;
-        velocity = Vector2.MoveTowards(velocity, DesirableVelocity.Value, Acceleration.Value * Time.deltaTime);
-        Velocity.Value = velocity;
+        if(Acceleration.Value > 0f)
+        {
+        
+            if(!UnableToMove.Value) DesirableVelocity.Value = Direction.Normalized * MoveSpeed.Value;
+            else DesirableVelocity.Value = Vector2.zero;
+
+            Vector2 velocity = Velocity.Value;
+            velocity = Vector2.MoveTowards(velocity, DesirableVelocity.Value, Acceleration.Value * Time.deltaTime);
+            Velocity.Value = velocity;
+        }
+        else
+        {
+            Velocity.Value = Direction.Normalized * MoveSpeed.Value;
+        }
 
     }
 
@@ -50,6 +58,5 @@ public class UnitMovement : MonoBehaviour
         rigidbody.velocity = Velocity.Value;
         // rigidbody.MovePosition(transform.position + (Vector3)(Velocity.Value * Time.fixedDeltaTime));
     }
-
 
 }

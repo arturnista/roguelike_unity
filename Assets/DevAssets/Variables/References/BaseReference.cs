@@ -25,22 +25,25 @@ public class BaseReference<T, F> where T : BaseSimpleVariable<F>
         {
             instanceVariable = value;
         }
+        get
+        {
+            return instanceVariable;
+        }
     }
 
     public F Value
     {
         get
         {
-            switch(Type) {
+            switch(Type)
+            {
 
                 case VariableType.Variable:
                     return Variable.Value;
 
                 case VariableType.Instance:
-                    if(instanceVariable == null) {
-                        instanceVariable = ScriptableObject.Instantiate(Variable);
-                    }
                     return instanceVariable.Value;
+                    
                 default:
                     return ConstantValue;
             }
@@ -48,21 +51,45 @@ public class BaseReference<T, F> where T : BaseSimpleVariable<F>
         set
         {
             
-            switch(Type) {
+            switch(Type)
+            {
+
+                case VariableType.Constant:
+                    ConstantValue = value;
+                    break;
 
                 case VariableType.Variable:
                     Variable.Value = value;
                     break;
 
                 case VariableType.Instance:
-                    if(instanceVariable == null) {
-                        instanceVariable = ScriptableObject.Instantiate(Variable);
-                    }
-                    instanceVariable.Value = value;
+                    if(instanceVariable) instanceVariable.Value = value;
                     break;
                     
             }
         }
     }
 
+    public void ResetValue() {
+            
+        switch(Type)
+        {
+
+            case VariableType.Variable:
+                Variable.ResetValue();
+                break;
+
+            case VariableType.Instance:
+                if(instanceVariable) instanceVariable.ResetValue();
+                break;
+                
+        }
+
+    }
+
+    public static implicit operator bool(BaseReference<T, F> value)
+    {
+        return value != null || (value.Type == BaseReference<T, F>.VariableType.Instance && value.InstanceVariable);
+    }
+    
 }

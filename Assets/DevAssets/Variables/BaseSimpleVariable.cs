@@ -7,8 +7,9 @@ public class BaseSimpleVariable<T> : BaseVariable
 
     [Space]
     public T DefaultValue;
+    public bool ResetOnPlay = true;
     
-    [ReadOnly]
+    [Space]
     [SerializeField]
     private T value;
     
@@ -24,11 +25,16 @@ public class BaseSimpleVariable<T> : BaseVariable
     
     protected virtual void OnEnable()
     {
-        ResetValue();
+        if(ResetOnPlay) ResetValue();
     }
 
     public virtual void ResetValue() {
         value = DefaultValue;
+    }
+
+    public static implicit operator bool(BaseSimpleVariable<T> value)
+    {
+        return value != null;
     }
 
 }

@@ -9,6 +9,7 @@ public class Destructible : MonoBehaviour
     [Header("Configuration")]
     [SerializeField]
     public FloatReference MaxHealth;
+    public bool StartWithMaxHealth;
 #endregion
 
 #region Variables
@@ -17,7 +18,20 @@ public class Destructible : MonoBehaviour
     public FloatReference Health;
     [SerializeField]
     public FloatReference Resistence;
+    [SerializeField]
+    public Vector2Reference Velocity;
 #endregion
+
+#region Effects
+    [Header("Effects")]
+    [SerializeField]
+    private GameObject ImpactEffect;
+#endregion
+
+    void Start()
+    {
+        if(StartWithMaxHealth) Health.Value = MaxHealth.Value;
+    }
 
     public virtual void GiveHealth(float health)
     {
@@ -25,8 +39,11 @@ public class Destructible : MonoBehaviour
         if(Health.Value > MaxHealth.Value) Health.Value = MaxHealth.Value;
     }
 
-    public virtual void DealDamage(float damage, RaycastHit2D hit) 
+    public virtual void DealDamage(float damage, RaycastHit2D hit, Transform damager) 
     {
+        if(ImpactEffect) Instantiate(ImpactEffect, hit.point, Quaternion.identity);
+        if(Velocity) Velocity.Value += -hit.normal * damage;
+
         float fullDamage = damage * Resistence.Value;
         Health.Value -= fullDamage;
         if(Health.Value < 0f) 

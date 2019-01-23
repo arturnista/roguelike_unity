@@ -59,7 +59,7 @@ public class BaseReferenceDrawer : PropertyDrawer {
             CreateFields(fieldType.enumValueIndex, position, property, boolSize);
         } else {
             var labelPosition = new Rect(position.x, position.y, position.width, position.height);
-            EditorGUI.LabelField(labelPosition, "Spread...");
+            EditorGUI.LabelField(labelPosition, "Instance data");
         }
 
         // Set indent back to what it was
