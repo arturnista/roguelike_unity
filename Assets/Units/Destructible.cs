@@ -8,15 +8,15 @@ public class Destructible : MonoBehaviour
 #region Configuration
     [Header("Configuration")]
     [SerializeField]
-    protected FloatReference MaxHealth;
+    public FloatReference MaxHealth;
 #endregion
 
 #region Variables
     [Header("Variables")]
     [SerializeField]
-    protected FloatReference Health;
+    public FloatReference Health;
     [SerializeField]
-    protected FloatReference Resistence;
+    public FloatReference Resistence;
 #endregion
 
     public virtual void GiveHealth(float health)
@@ -25,7 +25,7 @@ public class Destructible : MonoBehaviour
         if(Health.Value > MaxHealth.Value) Health.Value = MaxHealth.Value;
     }
 
-    public virtual void DealDamage(float damage) 
+    public virtual void DealDamage(float damage, RaycastHit2D hit) 
     {
         float fullDamage = damage * Resistence.Value;
         Health.Value -= fullDamage;

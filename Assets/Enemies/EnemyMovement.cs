@@ -9,7 +9,7 @@ public class EnemyMovement : UnitMovement
     {
         base.Update();
 
-        Direction.Value = new Vector2(.3f, .3f);
+        // Direction.Value = new Vector2(.3f, .3f);
     }
     
 }

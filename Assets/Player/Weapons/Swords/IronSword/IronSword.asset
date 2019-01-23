@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: Iron sword
   Description: Basic iron sword
   Damage: 10
-  AttackRange: 2
+  AttackRange: 1.5
   Cooldown: 0.3
-  currentCooldown: -0.07683331
+  currentCooldown: -377.71167

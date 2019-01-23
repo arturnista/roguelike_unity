@@ -9,21 +9,21 @@ public class UnitMovement : MonoBehaviour
 #region Configuration
     [Header("Configuration")]
     [SerializeField]
-    protected FloatReference Acceleration;
+    public FloatReference Acceleration;
     [SerializeField]
-    protected FloatReference MoveSpeed;
+    public FloatReference MoveSpeed;
 #endregion
 
 #region Variables
     [Header("Variables")]
     [SerializeField]
-    protected BoolReference UnableToMove;
+    public Vector2Reference Direction;
     [SerializeField]
-    protected Vector2Reference Direction;
+    public Vector2Reference Velocity;
     [SerializeField]
-    protected Vector2Reference Velocity;
+    public Vector2Reference DesirableVelocity;
     [SerializeField]
-    protected Vector2Reference DesirableVelocity;
+    public BoolReference UnableToMove;
 #endregion
 
     protected Rigidbody2D rigidbody;
@@ -36,13 +36,12 @@ public class UnitMovement : MonoBehaviour
     protected virtual void Update()
     {
         
-        DesirableVelocity.Value = Direction.Normalized * MoveSpeed.Value;
+        if(!UnableToMove.Value) DesirableVelocity.Value = Direction.Normalized * MoveSpeed.Value;
+        else DesirableVelocity.Value = Vector2.zero;
 
-        if(!UnableToMove.Value) {
-            Vector2 velocity = Velocity.Value;
-            velocity = Vector2.MoveTowards(velocity, DesirableVelocity.Value, Acceleration.Value * Time.deltaTime);
-            Velocity.Value = velocity;
-        }
+        Vector2 velocity = Velocity.Value;
+        velocity = Vector2.MoveTowards(velocity, DesirableVelocity.Value, Acceleration.Value * Time.deltaTime);
+        Velocity.Value = velocity;
 
     }
 

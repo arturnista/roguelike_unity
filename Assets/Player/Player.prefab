@@ -174,10 +174,6 @@ MonoBehaviour:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8244e36c7abbfa8439904a6b9dbc1ff9, type: 2}
-  UnableToMove:
-    Type: 1
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: a0ec354a4150f964a87e323bdefaca37, type: 2}
   Direction:
     Type: 1
     ConstantValue: {x: 0, y: 0}
@@ -190,6 +186,10 @@ MonoBehaviour:
     Type: 1
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: d77232bd0f4954b41a0c6f74bdc3ea2d, type: 2}
+  UnableToMove:
+    Type: 1
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: a0ec354a4150f964a87e323bdefaca37, type: 2}
 --- !u!114 &1428755872471017156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,6 +275,10 @@ MonoBehaviour:
   AttackLayer:
     serializedVersion: 2
     m_Bits: 3072
+  UnableToMove:
+    Type: 1
+    ConstantValue: 1
+    Variable: {fileID: 11400000, guid: a0ec354a4150f964a87e323bdefaca37, type: 2}
   LookDirection:
     Type: 1
     ConstantValue: {x: 0, y: 0}
@@ -283,4 +287,5 @@ MonoBehaviour:
     Type: 1
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: d9e705b00571afa4eb16cb05e2c5f793, type: 2}
+  AttackEffect: {fileID: 8873751900456621632, guid: ab60f91dbdf586a438c0448c248609e1, type: 3}
   ImpactEffect: {fileID: 476582336847252379, guid: e6fec3bdf64353d4f836a1588bfde6e0, type: 3}

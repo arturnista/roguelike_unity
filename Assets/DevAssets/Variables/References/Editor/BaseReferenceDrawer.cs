@@ -55,7 +55,12 @@ public class BaseReferenceDrawer : PropertyDrawer {
         int result = EditorGUI.Popup(boolPosition, fieldType.enumValueIndex, popupOptions, popupStyle);
         fieldType.enumValueIndex = result;
 
-        CreateFields(fieldType.enumValueIndex, position, property, boolSize);
+        if(fieldType.enumValueIndex != (int)FloatReference.VariableType.Instance) {
+            CreateFields(fieldType.enumValueIndex, position, property, boolSize);
+        } else {
+            var labelPosition = new Rect(position.x, position.y, position.width, position.height);
+            EditorGUI.LabelField(labelPosition, "Spread...");
+        }
 
         // Set indent back to what it was
         EditorGUI.indentLevel = indent;

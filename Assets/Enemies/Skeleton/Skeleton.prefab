@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 6089205348562668983}
   - component: {fileID: 6089205348562668982}
   - component: {fileID: 6089205348562668977}
+  - component: {fileID: 7998992460072643436}
   - component: {fileID: 185892160838529329}
   - component: {fileID: 3835534312724097848}
   m_Layer: 11
@@ -151,6 +152,27 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &7998992460072643436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6089205348562668976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae206fa7d38e8d488040336832a621f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Acceleration: {fileID: 11400000, guid: e2137e23b620e0a45bd5cae4afe8eec3, type: 2}
+  MoveSpeed: {fileID: 11400000, guid: 38a67252137d13b40ac5e323714fec0a, type: 2}
+  Direction: {fileID: 11400000, guid: 4393cbf19386c11488967722e869e29a, type: 2}
+  Velocity: {fileID: 11400000, guid: 97beb7ace01e05644ae44ce05d5af728, type: 2}
+  DesirableVelocity: {fileID: 11400000, guid: 4be730ac3418b9c4db6568bc00989711, type: 2}
+  UnableToMove: {fileID: 11400000, guid: 1747d2cf4cb4d4c4093ad05ba0f0edf4, type: 2}
+  MaxHealth: {fileID: 11400000, guid: 848018e9cb196e34a9cc2a01d5b06dde, type: 2}
+  Health: {fileID: 11400000, guid: b96b8097ed897674da956035badb5a65, type: 2}
+  Resistence: {fileID: 11400000, guid: fde2409539380cf4391a0e9249709010, type: 2}
 --- !u!114 &185892160838529329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +205,10 @@ MonoBehaviour:
     Type: 2
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: 4be730ac3418b9c4db6568bc00989711, type: 2}
+  UnableToMove:
+    Type: 2
+    ConstantValue: 0
+    Variable: {fileID: 0}
 --- !u!114 &3835534312724097848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth:
-    Type: 0
+    Type: 2
     ConstantValue: 100
     Variable: {fileID: 0}
   Health:
@@ -204,6 +230,10 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: b96b8097ed897674da956035badb5a65, type: 2}
   Resistence:
-    Type: 0
+    Type: 2
     ConstantValue: 1
+    Variable: {fileID: 0}
+  Velocity:
+    Type: 2
+    ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 0}
