@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 6089205348562668983}
   - component: {fileID: 6089205348562668982}
   - component: {fileID: 6089205348562668977}
-  - component: {fileID: 8544184096198248543}
+  - component: {fileID: 9064549599853312193}
   - component: {fileID: 185892160838529329}
   - component: {fileID: 3835534312724097848}
   - component: {fileID: 9219319523459198647}
@@ -154,7 +154,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.4
---- !u!114 &8544184096198248543
+--- !u!114 &9064549599853312193
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,17 +163,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6089205348562668976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dae206fa7d38e8d488040336832a621f, type: 3}
+  m_Script: {fileID: 11500000, guid: 780909e2c1d3adb43bf4aa1e07b59b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Direction: {fileID: 11400000, guid: 4393cbf19386c11488967722e869e29a, type: 2}
-  Velocity: {fileID: 11400000, guid: 97beb7ace01e05644ae44ce05d5af728, type: 2}
-  DesirableVelocity: {fileID: 11400000, guid: 4be730ac3418b9c4db6568bc00989711, type: 2}
-  UnableToMove: {fileID: 11400000, guid: 1747d2cf4cb4d4c4093ad05ba0f0edf4, type: 2}
-  Health: {fileID: 11400000, guid: 77de959911cea7f4881a31a9a07bc6e3, type: 2}
-  Resistence: {fileID: 11400000, guid: fde2409539380cf4391a0e9249709010, type: 2}
-  AttackDelay: {fileID: 11400000, guid: 8890f6eeeb0ca164bae68d60b9ff5243, type: 2}
-  Target: {fileID: 11400000, guid: 621a0a7aa21ef6d4f885c44a5b9b47d6, type: 2}
+  Holder: {fileID: 11400000, guid: d941dc9603eb89a45ace92095c9a6ab8, type: 2}
 --- !u!114 &185892160838529329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,34 +183,50 @@ MonoBehaviour:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: e2137e23b620e0a45bd5cae4afe8eec3, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   MoveSpeed:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 38a67252137d13b40ac5e323714fec0a, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   Direction:
     Type: 2
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: 4393cbf19386c11488967722e869e29a, type: 2}
+    HolderDataName: {fileID: 11400000, guid: 6084877ad5ebd7342b525912516ed8bb, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}
   Velocity:
     Type: 2
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: 97beb7ace01e05644ae44ce05d5af728, type: 2}
+    HolderDataName: {fileID: 11400000, guid: 314d6a971184a9a4292693c196036c70, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}
   DesirableVelocity:
     Type: 2
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: 4be730ac3418b9c4db6568bc00989711, type: 2}
+    HolderDataName: {fileID: 11400000, guid: e7aa9d0e5d293944a942f303776b1b08, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}
   UnableToMove:
     Type: 2
     ConstantValue: 0
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: 689468fc7ac718445a07317e8229086f, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}
   Target:
     Type: 2
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: dc7fa9ff2788e6349aa7807c8932c445, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}
   AttackRange:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 0c4a9c653a4f11c4091c8ab522eb85fc, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
 --- !u!114 &3835534312724097848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,28 +243,40 @@ MonoBehaviour:
     Type: 1
     ConstantValue: 100
     Variable: {fileID: 11400000, guid: 848018e9cb196e34a9cc2a01d5b06dde, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   StartWithMaxHealth: 1
+  Resistence:
+    Type: 1
+    ConstantValue: 1
+    Variable: {fileID: 11400000, guid: fde2409539380cf4391a0e9249709010, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   Health:
     Type: 2
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: b96b8097ed897674da956035badb5a65, type: 2}
-  Resistence:
-    Type: 2
-    ConstantValue: 1
-    Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: 520ecb18d3a88e045a2f959648329d43, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}
   Velocity:
     Type: 2
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: 314d6a971184a9a4292693c196036c70, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}
   ImpactEffect: {fileID: 476582336847252379, guid: e6fec3bdf64353d4f836a1588bfde6e0, type: 3}
   Target:
     Type: 2
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: dc7fa9ff2788e6349aa7807c8932c445, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}
   AttackDelay:
     Type: 2
     ConstantValue: 0
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: c20b5cd6d3b1fa6419077a3e4625aee6, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}
 --- !u!114 &9219319523459198647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,15 +293,21 @@ MonoBehaviour:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 0c4a9c653a4f11c4091c8ab522eb85fc, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   ProjectilePrefab: {fileID: 6962232131117010515, guid: bc2432ff26f5ab04b89e7f1fb28b03f2, type: 3}
   AttackDelay:
     Type: 2
     ConstantValue: 0
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: c20b5cd6d3b1fa6419077a3e4625aee6, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}
   Target:
     Type: 2
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: dc7fa9ff2788e6349aa7807c8932c445, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}
 --- !u!1 &8677477120427616085
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,13 +372,19 @@ MonoBehaviour:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 3658eb03a500b8b4daacb7ee81d00326, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   ObstacleLayer:
     Type: 1
     ConstantValue:
       serializedVersion: 2
       m_Bits: 0
     Variable: {fileID: 11400000, guid: f40f467f2e89c30428042e47cd303fb2, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   Target:
     Type: 2
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: dc7fa9ff2788e6349aa7807c8932c445, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}

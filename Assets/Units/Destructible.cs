@@ -10,14 +10,14 @@ public class Destructible : MonoBehaviour
     [SerializeField]
     public FloatReference MaxHealth;
     public bool StartWithMaxHealth;
+    [SerializeField]
+    public FloatReference Resistence;
 #endregion
 
 #region Variables
     [Header("Variables")]
     [SerializeField]
     public FloatReference Health;
-    [SerializeField]
-    public FloatReference Resistence;
     [SerializeField]
     public Vector2Reference Velocity;
 #endregion

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using System.Linq;
+using System;
+using System.Reflection;
 
 public class BaseReferenceDrawer : PropertyDrawer {
     
@@ -58,8 +61,15 @@ public class BaseReferenceDrawer : PropertyDrawer {
         if(fieldType.enumValueIndex != (int)FloatReference.VariableType.Instance) {
             CreateFields(fieldType.enumValueIndex, position, property, boolSize);
         } else {
-            var labelPosition = new Rect(position.x, position.y, position.width, position.height);
-            EditorGUI.LabelField(labelPosition, "Instance data");
+            // var labelPosition = new Rect(position.x, position.y, position.width, position.height);
+            // EditorGUI.LabelField(labelPosition, "Instance data");
+            
+            var halfWidth = position.width / 2f;
+            var holderPosition = new Rect(position.x, position.y, halfWidth, position.height);
+            var typePosition = new Rect(position.x + halfWidth, position.y, halfWidth, position.height);
+
+            EditorGUI.PropertyField(holderPosition, property.FindPropertyRelative("HolderRegister"), GUIContent.none);
+            EditorGUI.PropertyField(typePosition, property.FindPropertyRelative("HolderDataName"), GUIContent.none);
         }
 
         // Set indent back to what it was

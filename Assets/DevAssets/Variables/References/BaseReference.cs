@@ -18,6 +18,9 @@ public class BaseReference<T, F> where T : BaseSimpleVariable<F>
     public F ConstantValue;
     public T Variable;
 
+    public DataName HolderDataName;
+    public DataHolderRegister HolderRegister;
+
     private T instanceVariable;
     public T InstanceVariable
     {
@@ -27,6 +30,9 @@ public class BaseReference<T, F> where T : BaseSimpleVariable<F>
         }
         get
         {
+            if(instanceVariable == null) {
+                instanceVariable = HolderRegister.GetVariable<T>(HolderDataName);
+            }
             return instanceVariable;
         }
     }
@@ -42,7 +48,7 @@ public class BaseReference<T, F> where T : BaseSimpleVariable<F>
                     return Variable.Value;
 
                 case VariableType.Instance:
-                    return instanceVariable.Value;
+                    return InstanceVariable.Value;
                     
                 default:
                     return ConstantValue;
@@ -63,7 +69,7 @@ public class BaseReference<T, F> where T : BaseSimpleVariable<F>
                     break;
 
                 case VariableType.Instance:
-                    if(instanceVariable) instanceVariable.Value = value;
+                    if(InstanceVariable) InstanceVariable.Value = value;
                     break;
                     
             }

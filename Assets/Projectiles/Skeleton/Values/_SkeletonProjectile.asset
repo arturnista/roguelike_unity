@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68ad3eede4faf643b20385a7e5f01bd, type: 3}
+  m_Name: _SkeletonProjectile
+  m_EditorClassIdentifier: 
+  Data:
+  - Name: {fileID: 11400000, guid: a6075ecf99a29d24490536d6529c4c49, type: 2}
+    Variable: {fileID: 11400000, guid: 19e15039fd2c35b48b94c10ee047d32a, type: 2}
+  - Name: {fileID: 11400000, guid: 6084877ad5ebd7342b525912516ed8bb, type: 2}
+    Variable: {fileID: 11400000, guid: 5ccd2c98e26819f48a8d923f32e5f828, type: 2}
+  - Name: {fileID: 11400000, guid: 314d6a971184a9a4292693c196036c70, type: 2}
+    Variable: {fileID: 11400000, guid: 7986862ea6b5af34eb6f8fb350d4a5f2, type: 2}

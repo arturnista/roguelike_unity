@@ -6,7 +6,7 @@ public class BaseVariable : ScriptableObject
 {
     
 #if UNITY_EDITOR
-    [Multiline]
+    [TextArea]
     public string Description;
 #endif
 

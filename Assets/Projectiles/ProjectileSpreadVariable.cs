@@ -9,8 +9,6 @@ public class ProjectileSpreadVariable : MonoBehaviour
     [Header("Configuration")]
     [Header("Movement")]
     [SerializeField]
-    protected FloatVariable MoveSpeed;
-    [SerializeField]
     protected FloatVariable Damage;
 
     [Header("Variables")]
@@ -22,12 +20,10 @@ public class ProjectileSpreadVariable : MonoBehaviour
     void Awake()
     {
         Damage = ScriptableObject.Instantiate(Damage);
-        MoveSpeed = ScriptableObject.Instantiate(MoveSpeed);
         Direction = ScriptableObject.Instantiate(Direction);
         Velocity = ScriptableObject.Instantiate(Velocity);
 
         ProjectileMovement movement = GetComponent<ProjectileMovement>();
-        movement.MoveSpeed.InstanceVariable = MoveSpeed;
         movement.Direction.InstanceVariable = Direction;
         movement.Velocity.InstanceVariable = Velocity;
 

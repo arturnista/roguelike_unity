@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 6962232131117010516}
   - component: {fileID: 6962232131117010517}
   - component: {fileID: 6962232131117010514}
-  - component: {fileID: 7920519936156400222}
+  - component: {fileID: 7679375808554849924}
   - component: {fileID: 2682163638862132140}
   - component: {fileID: 6577269410946803989}
   - component: {fileID: 8916075030487976626}
@@ -163,7 +163,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &7920519936156400222
+--- !u!114 &7679375808554849924
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,13 +172,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6962232131117010515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd356992975160c45bc3646984916eba, type: 3}
+  m_Script: {fileID: 11500000, guid: 780909e2c1d3adb43bf4aa1e07b59b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: {fileID: 11400000, guid: f7573697e45b41b43bb200ccb1e88858, type: 2}
-  Damage: {fileID: 11400000, guid: 19e15039fd2c35b48b94c10ee047d32a, type: 2}
-  Direction: {fileID: 11400000, guid: 5ccd2c98e26819f48a8d923f32e5f828, type: 2}
-  Velocity: {fileID: 11400000, guid: 7986862ea6b5af34eb6f8fb350d4a5f2, type: 2}
+  Holder: {fileID: 11400000, guid: 6d4a0722d836e404ea11be237304d8ac, type: 2}
 --- !u!114 &2682163638862132140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,26 +192,38 @@ MonoBehaviour:
     Type: 0
     ConstantValue: 0
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   MoveSpeed:
-    Type: 2
+    Type: 1
     ConstantValue: 0
-    Variable: {fileID: 0}
+    Variable: {fileID: 11400000, guid: f7573697e45b41b43bb200ccb1e88858, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   Direction:
     Type: 2
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: 6084877ad5ebd7342b525912516ed8bb, type: 2}
+    HolderRegister: {fileID: 7679375808554849924}
   Velocity:
     Type: 2
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: 314d6a971184a9a4292693c196036c70, type: 2}
+    HolderRegister: {fileID: 7679375808554849924}
   DesirableVelocity:
     Type: 0
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   UnableToMove:
     Type: 0
     ConstantValue: 0
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
 --- !u!114 &6577269410946803989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +240,8 @@ MonoBehaviour:
     Type: 2
     ConstantValue: 0
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: a6075ecf99a29d24490536d6529c4c49, type: 2}
+    HolderRegister: {fileID: 7679375808554849924}
 --- !u!114 &8916075030487976626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,17 +258,25 @@ MonoBehaviour:
     Type: 0
     ConstantValue: 0
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   StartWithMaxHealth: 0
-  Health:
-    Type: 0
-    ConstantValue: -1
-    Variable: {fileID: 0}
   Resistence:
     Type: 0
     ConstantValue: 1
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
+  Health:
+    Type: 0
+    ConstantValue: -1
+    Variable: {fileID: 0}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   Velocity:
     Type: 0
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   ImpactEffect: {fileID: 476582336847252379, guid: e6fec3bdf64353d4f836a1588bfde6e0, type: 3}
