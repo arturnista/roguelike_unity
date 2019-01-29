@@ -16,7 +16,19 @@ public class BaseSimpleVariable<T> : BaseVariable
     public virtual T Value
     {
         get { return value; }
-        set { this.value = value; }
+        set
+        {
+            T oldValue = this.value;
+            this.value = value;
+            if(onChangeValue != null) onChangeValue(oldValue);
+        }
+    }
+
+    public delegate void OnChangeValueAction(T oldValue);
+    private OnChangeValueAction onChangeValue;
+    public OnChangeValueAction OnChangeValue {
+        get { return onChangeValue; }
+        set { onChangeValue = value; }
     }
 
     public override string ToString() {

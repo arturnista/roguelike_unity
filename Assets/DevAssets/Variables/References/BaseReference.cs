@@ -37,6 +37,43 @@ public class BaseReference<T, F> where T : BaseSimpleVariable<F>
         }
     }
 
+    public BaseSimpleVariable<F>.OnChangeValueAction OnChangeValue {
+        get
+        {
+            switch(Type)
+            {
+
+                case VariableType.Variable:
+                    return Variable.OnChangeValue;
+
+                case VariableType.Instance:
+                    if(InstanceVariable) return InstanceVariable.OnChangeValue;
+                    return null;
+                    
+                default:
+                    return null;
+            }
+        }
+        set
+        {
+            switch(Type)
+            {
+
+                case VariableType.Variable:
+                    Variable.OnChangeValue = value;
+                    break;
+
+                case VariableType.Instance:
+                    if(InstanceVariable) InstanceVariable.OnChangeValue = value;
+                    break;
+
+                default:
+                    Debug.LogWarning("OnChangeValue not set because of type " + Type);
+                    break;
+            }
+        }
+    }
+
     public F Value
     {
         get
@@ -56,7 +93,6 @@ public class BaseReference<T, F> where T : BaseSimpleVariable<F>
         }
         set
         {
-            
             switch(Type)
             {
 

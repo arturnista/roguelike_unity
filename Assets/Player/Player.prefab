@@ -1,5 +1,153 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1244701658209440619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1244701658209440614}
+  - component: {fileID: 1244701658209440613}
+  - component: {fileID: 1244701658209440612}
+  - component: {fileID: 1052800802363200978}
+  - component: {fileID: 3500570885636399782}
+  m_Layer: 21
+  m_Name: AttackArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1244701658209440614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244701658209440619}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4150661908869239631}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!212 &1244701658209440613
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244701658209440619}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 722617297
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300010, guid: b2831e04098278045bc4a46efa8cae82, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &1244701658209440612
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244701658209440619}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c15a6d6b1400c2840bce5838cbbab231, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &1052800802363200978
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244701658209440619}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0
+--- !u!114 &3500570885636399782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244701658209440619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cddbcad041fbac4c8028d8da938b069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LookDirection:
+    Type: 1
+    ConstantValue: {x: 0, y: 0}
+    Variable: {fileID: 11400000, guid: 1a9113c6506bdda4fbab404eceed8b4b, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
+  Holder: {fileID: 11400000, guid: 6fa396b738dd9814196b59d77ddbcca6, type: 2}
+  IsAttacking:
+    Type: 1
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: b7506d220d0df634e9ac682287fb8b46, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
+  Destructibles:
+    Type: 1
+    ConstantValue: []
+    Variable: {fileID: 11400000, guid: b8e245e3d55e3664d9b4bde4162404ab, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
 --- !u!1 &4150661908553881203
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,6 +262,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4150661908553881202}
+  - {fileID: 1244701658209440614}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -170,26 +319,38 @@ MonoBehaviour:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 01d70b066a76fb741918d311f3bf6736, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   MoveSpeed:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8244e36c7abbfa8439904a6b9dbc1ff9, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   Direction:
     Type: 1
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: f8310b2ac87979249b07c19996c9b22a, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   Velocity:
     Type: 1
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: d9e705b00571afa4eb16cb05e2c5f793, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   DesirableVelocity:
     Type: 1
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: d77232bd0f4954b41a0c6f74bdc3ea2d, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   UnableToMove:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: a0ec354a4150f964a87e323bdefaca37, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
 --- !u!114 &1428755872471017156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +367,8 @@ MonoBehaviour:
     Type: 1
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: 1a9113c6506bdda4fbab404eceed8b4b, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
 --- !u!114 &8408525943273137788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,18 +385,26 @@ MonoBehaviour:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: ecf8096a1a66ba74e96ed89aa557328d, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   Cooldown:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 68fead87c0185734895e6f5f62606319, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   Direction:
     Type: 1
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: f8310b2ac87979249b07c19996c9b22a, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   Velocity:
     Type: 1
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: d9e705b00571afa4eb16cb05e2c5f793, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   DashEffect: {fileID: 6480891547506213496, guid: eae0d8a913e833c40b0ca382d7ba21cd, type: 3}
 --- !u!114 &8731974200997013575
 MonoBehaviour:
@@ -251,19 +422,27 @@ MonoBehaviour:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 09370d2eafa3eba4782a52a0f44520c8, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   StartWithMaxHealth: 0
-  Health:
-    Type: 1
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: 4efc5cf727d70764db90724d6caf9f65, type: 2}
   Resistence:
     Type: 1
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 59694cc6b00e6dc45a9bf20f3b9a476f, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
+  Health:
+    Type: 1
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 4efc5cf727d70764db90724d6caf9f65, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   Velocity:
     Type: 1
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: d9e705b00571afa4eb16cb05e2c5f793, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   ImpactEffect: {fileID: 476582336847252379, guid: e6fec3bdf64353d4f836a1588bfde6e0, type: 3}
 --- !u!114 &3765784410234824714
 MonoBehaviour:
@@ -284,16 +463,29 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 0
     Variable: {fileID: 11400000, guid: 0dcda7d66b88e334eb0222101978097b, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   UnableToMove:
     Type: 1
     ConstantValue: 1
     Variable: {fileID: 11400000, guid: a0ec354a4150f964a87e323bdefaca37, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   LookDirection:
     Type: 1
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: 1a9113c6506bdda4fbab404eceed8b4b, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   Velocity:
     Type: 1
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 11400000, guid: d9e705b00571afa4eb16cb05e2c5f793, type: 2}
-  AttackEffect: {fileID: 8873751900456621632, guid: ab60f91dbdf586a438c0448c248609e1, type: 3}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
+  IsAttacking:
+    Type: 1
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: b7506d220d0df634e9ac682287fb8b46, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
