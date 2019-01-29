@@ -50,7 +50,7 @@ public class PlayerAttack : MonoBehaviour
         }
 
         float attackRadius = 0.5f;
-        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, attackRadius, LookDirection.Value, Holder.CurrentSword.AttackRange - attackRadius, AttackLayer.Value);
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, attackRadius, LookDirection.Value, (Holder.CurrentSword.AttackRange * 1.5f) - attackRadius, AttackLayer.Value);
         if(hits.Length > 0) {
             foreach(RaycastHit2D hit in hits) {
                 Destructible hitDestructible = hit.transform.GetComponent<Destructible>();

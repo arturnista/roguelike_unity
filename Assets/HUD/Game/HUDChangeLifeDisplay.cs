@@ -20,18 +20,19 @@ public class HUDChangeLifeDisplay : MonoBehaviour
         damageDisplayImage.enabled = false;
     }
 
-    void Start()
+    void OnEnable()
     {
-        lastHealth = Health.Value;
+        Health.OnChangeValue += this.OnChangeHealth;
     }
 
-    void Update()
+    void OnDisable()
     {
-        if(lastHealth != Health.Value)
-        {
-            StartCoroutine(EffectDisplay(lastHealth > Health.Value));
-            lastHealth = Health.Value;
-        }
+        Health.OnChangeValue -= this.OnChangeHealth;
+    }
+
+    void OnChangeHealth(float lastValue)
+    {
+        StartCoroutine(EffectDisplay(lastValue > Health.Value));
     }
 
     IEnumerator EffectDisplay(bool damaged) {
