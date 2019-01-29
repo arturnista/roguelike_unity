@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd27ac23356f6041b4a078ea3c60405, type: 3}
   m_Name: ModularMap
   m_EditorClassIdentifier: 
-  RoomsPrefabs:
-  - {fileID: 6411469531774929561, guid: c35fb0f4ff608b042be6c35c61a250b7, type: 3}
-  - {fileID: 6382644872408140134, guid: 7f8f256d0837b094abfe3f0ff4ced33a, type: 3}
+  RoomsData:
+  - {fileID: 11400000, guid: 65bc7d92e5c726d498428c4d762d9d1d, type: 2}
+  - {fileID: 11400000, guid: 42e44629a268a7a43a3297e75933e2a3, type: 2}
+  - {fileID: 11400000, guid: 63e9b3f4cfb45c94ba6cc10bd3f4bbd5, type: 2}

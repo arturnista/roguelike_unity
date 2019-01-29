@@ -384,5 +384,15 @@ PrefabInstance:
       propertyPath: m_TileSpriteArray.Array.data[11].m_Data
       value: 
       objectReference: {fileID: 21300294, guid: a770fa306ff7aef49ae55486dbc8d3a9, type: 3}
-    m_RemovedComponents: []
+    - target: {fileID: 8321822410439140246, guid: dbd0e06a716edac40863f73225df1944, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321822410439140246, guid: dbd0e06a716edac40863f73225df1944, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3146384823826908880, guid: dbd0e06a716edac40863f73225df1944, type: 3}
+    - {fileID: 2952494866030108356, guid: dbd0e06a716edac40863f73225df1944, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dbd0e06a716edac40863f73225df1944, type: 3}

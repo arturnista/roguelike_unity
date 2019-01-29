@@ -3,26 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(SaveTilemap))]
-public class SaveTilemapDrawer : Editor
+[CustomEditor(typeof(LoadTilemap))]
+public class LoadTilemapEditor : Editor
 {
     
     public override void OnInspectorGUI()
     {
         DrawDefaultInspector();
         
-        SaveTilemap saveTilemap = (SaveTilemap)target;
-        if(GUILayout.Button("Save data"))
-        {
-            saveTilemap.SaveData();
-        }
+        LoadTilemap LoadTilemap = (LoadTilemap)target;
         if(GUILayout.Button("Load data"))
         {
-            saveTilemap.LoadData();
+            LoadTilemap.LoadData();
         }
         if(GUILayout.Button("Clear data"))
         {
-            saveTilemap.ClearData();
+            LoadTilemap.ClearData();
         }
     }
 

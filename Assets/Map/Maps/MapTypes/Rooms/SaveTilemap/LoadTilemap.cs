@@ -3,66 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class SaveTilemap : MonoBehaviour
+public class LoadTilemap : MonoBehaviour
 {
     
     public MapSaveData MapData;
-
-    public void SaveData()
-    {
-        
-        MapData.Layers.Clear();
-
-        Tilemap[] allTilemaps = GetComponentsInChildren<Tilemap>();
-        foreach(Tilemap tilemap in allTilemaps)
-        {
-            TilemapRenderer tilemapRenderer = tilemap.GetComponent<TilemapRenderer>();
-            MapLayer layer = new MapLayer(
-                tilemap.name, 
-                tilemap.origin, 
-                tilemap.size, 
-                tilemap.gameObject.layer, 
-                tilemapRenderer.sortingLayerID, 
-                tilemapRenderer.sortingOrder, 
-                tilemap.GetComponent<TilemapCollider2D>() != null
-            );
-
-            // for (int x = 0; x < tilemap.size.x; x++)
-            // {
-            //     for (int y = 0; y < tilemap.size.y; y++)
-            //     {   
-            //         Vector3Int tilePosition = new Vector3Int(x, y, 0);
-            //         if (tilemap.HasTile(tilePosition))
-            //         {
-            //             TileBase tile = tilemap.GetTile(tilePosition);
-            //             MapTile mapTile = new MapTile((Vector2Int) tilePosition, tile);
-            //             layer.Tiles.Add(mapTile);
-            //         }
-            //     }
-            // }
-
-            BoundsInt bounds = tilemap.cellBounds;
-            TileBase[] allTiles = tilemap.GetTilesBlock(bounds);
-
-            for (int x = 0; x < bounds.size.x; x++) {
-                for (int y = 0; y < bounds.size.y; y++) {
-                    TileBase tile = allTiles[x + y * bounds.size.x];
-                    if (tile != null) {
-                        
-                        Vector2Int tilePosition = new Vector2Int(x, y);
-                        MapTile mapTile = new MapTile(tilePosition, tile);
-                        layer.Tiles.Add(mapTile);
-
-                    }
-                }
-            }        
-
-            MapData.Layers.Add(layer);
-        }
-
-        Debug.Log("Data saved!");
-    }
-
+    
     public void LoadData()
     {
         // Get or Create the GRID
