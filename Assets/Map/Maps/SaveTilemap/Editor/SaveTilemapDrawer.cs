@@ -12,9 +12,17 @@ public class SaveTilemapDrawer : Editor
         DrawDefaultInspector();
         
         SaveTilemap saveTilemap = (SaveTilemap)target;
-        if(GUILayout.Button("Save tilemap data"))
+        if(GUILayout.Button("Save data"))
         {
             saveTilemap.SaveData();
+        }
+        if(GUILayout.Button("Load data"))
+        {
+            saveTilemap.LoadData();
+        }
+        if(GUILayout.Button("Clear data"))
+        {
+            saveTilemap.ClearData();
         }
     }
 

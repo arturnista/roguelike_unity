@@ -17,6 +17,7 @@ public class MapTile {
     [SerializeField]
     private TileBase tile;
     public TileBase Tile { get { return tile; } }
+    [SerializeField]
     private Vector2Int position;
 
     private TileType nextType;
