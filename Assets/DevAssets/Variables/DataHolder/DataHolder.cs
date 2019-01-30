@@ -26,8 +26,6 @@ public class DataHolder : ScriptableObject
 
     }
 
-    public bool first = false;
-
     public T GetVariable<T>(int id, DataName dataName) where T : BaseVariable
     {
         if(!DataDictonary.ContainsKey(dataName)) return null;

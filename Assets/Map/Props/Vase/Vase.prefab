@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4532636941040642189}
   - component: {fileID: 1646661028070731177}
+  - component: {fileID: 2545333824791870740}
   m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
@@ -68,7 +69,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300606, guid: a770fa306ff7aef49ae55486dbc8d3a9, type: 3}
+  m_Sprite: {fileID: 21300530, guid: a770fa306ff7aef49ae55486dbc8d3a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -79,6 +80,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2545333824791870740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2840619591080290270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b90798a3b8eb247b8be4c827569668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health:
+    Type: 2
+    ConstantValue: 0
+    Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: 520ecb18d3a88e045a2f959648329d43, type: 2}
+    HolderRegister: {fileID: 3412574228915270670}
+  Sprites:
+  - Limit: 20
+    Sprite: {fileID: 21300530, guid: a770fa306ff7aef49ae55486dbc8d3a9, type: 3}
+  - Limit: 10
+    Sprite: {fileID: 21300532, guid: a770fa306ff7aef49ae55486dbc8d3a9, type: 3}
 --- !u!1 &9170483572727643089
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,10 +114,10 @@ GameObject:
   - component: {fileID: 9170483572727643088}
   - component: {fileID: 4722982055189329240}
   - component: {fileID: 3652272715380149195}
-  - component: {fileID: 4634397851952126794}
+  - component: {fileID: 3412574228915270670}
   - component: {fileID: 1823547704068628995}
   m_Layer: 10
-  m_Name: Box
+  m_Name: Vase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +132,7 @@ Transform:
   m_GameObject: {fileID: 9170483572727643089}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4532636941040642189}
   m_Father: {fileID: 0}
@@ -161,7 +185,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4634397851952126794
+--- !u!114 &3412574228915270670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,10 +194,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9170483572727643089}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a8c20000a8600d4c98b4d84ad23610e, type: 3}
+  m_Script: {fileID: 11500000, guid: 780909e2c1d3adb43bf4aa1e07b59b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: {fileID: 11400000, guid: 1329aec37c7d0bf46a9b6cc0869083e0, type: 2}
+  Holder: {fileID: 11400000, guid: 284174eaf72acc041b98a33812da3b55, type: 2}
 --- !u!114 &1823547704068628995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,21 +210,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34bf76ab0cc70b4e99f3851887c7b5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ImpactEffect: {fileID: 476582336847252379, guid: e6fec3bdf64353d4f836a1588bfde6e0,
+    type: 3}
   MaxHealth:
     Type: 0
-    ConstantValue: 25
+    ConstantValue: 20
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
   StartWithMaxHealth: 1
-  Health:
-    Type: 2
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: 1329aec37c7d0bf46a9b6cc0869083e0, type: 2}
   Resistence:
     Type: 0
     ConstantValue: 1
     Variable: {fileID: 0}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
+  Health:
+    Type: 2
+    ConstantValue: 10
+    Variable: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: 520ecb18d3a88e045a2f959648329d43, type: 2}
+    HolderRegister: {fileID: 3412574228915270670}
   Velocity:
     Type: 0
     ConstantValue: {x: 0, y: 0}
     Variable: {fileID: 0}
-  ImpactEffect: {fileID: 476582336847252379, guid: e6fec3bdf64353d4f836a1588bfde6e0, type: 3}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}

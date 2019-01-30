@@ -12,13 +12,13 @@ public class Gate : MonoBehaviour
 
     public Status InitialStatus = Status.Close;
     
-    private Status currentStatus;
+    protected Status currentStatus;
     
-    private Sprite sprite;
-    private SpriteRenderer spriteRenderer;
-    private Collider2D collider2D;
+    protected Sprite sprite;
+    protected SpriteRenderer spriteRenderer;
+    protected Collider2D collider2D;
 
-    void Awake()
+    protected virtual void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         collider2D = GetComponent<Collider2D>();
@@ -34,14 +34,14 @@ public class Gate : MonoBehaviour
         else Close();
     }
 
-    public void Close()
+    public virtual void Close()
     {
         currentStatus = Status.Close;
         spriteRenderer.enabled = true;
         collider2D.enabled = true;
     }
 
-    public void Open()
+    public virtual void Open()
     {
         currentStatus = Status.Open;
         spriteRenderer.enabled = false;

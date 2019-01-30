@@ -40,7 +40,7 @@ public class Destructible : Attackable
 
         float fullDamage = damage * Resistence.Value;
         Health.Value -= fullDamage;
-        if(Health.Value < 0f) 
+        if(Health.Value <= 0f) 
         {
             DestroyObject();
         }

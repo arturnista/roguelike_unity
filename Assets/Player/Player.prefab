@@ -365,6 +365,13 @@ MonoBehaviour:
     Variable: {fileID: 11400000, guid: 8244e36c7abbfa8439904a6b9dbc1ff9, type: 2}
     HolderDataName: {fileID: 0}
     HolderRegister: {fileID: 0}
+  Velocity:
+    Type: 1
+    ConstantValue: {x: 0, y: 0}
+    Variable: {fileID: 11400000, guid: d9e705b00571afa4eb16cb05e2c5f793, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
+  ShieldBlockEvent: {fileID: 11400000, guid: f624401b7a37a8b4aa1202987892999e, type: 2}
 --- !u!1 &6659560437214029033
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,8 +383,7 @@ GameObject:
   - component: {fileID: 7027871559637864312}
   - component: {fileID: 8934699534973431382}
   - component: {fileID: 3776160588186352751}
-  - component: {fileID: 5196983985194783403}
-  - component: {fileID: 4903627367908355897}
+  - component: {fileID: 2594555250633821940}
   m_Layer: 21
   m_Name: PlayerShield
   m_TagString: Untagged
@@ -463,7 +469,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &5196983985194783403
+--- !u!114 &2594555250633821940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -472,20 +478,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6659560437214029033}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae8f870c6dd671a438e1615163169e53, type: 3}
+  m_Script: {fileID: 11500000, guid: 35d42252f9076cd46ac3e1cdcabcaea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ImpactEffect: {fileID: 476582336847252379, guid: e6fec3bdf64353d4f836a1588bfde6e0,
     type: 3}
---- !u!114 &4903627367908355897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6659560437214029033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffede511900d84746bda411427a67fb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: f624401b7a37a8b4aa1202987892999e, type: 2}

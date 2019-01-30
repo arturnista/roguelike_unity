@@ -21,7 +21,7 @@ public class EnemyAttack : MonoBehaviour
     public TransformReference Target;
 #endregion
 
-    void Update()
+    public virtual void Update()
     {   
         if(Target.Value) {
 
@@ -29,16 +29,16 @@ public class EnemyAttack : MonoBehaviour
             if(AttackDelay.Value < 0f)
             {
                 AttackDelay.ResetValue();
-                Attack();
+                Vector3 attackDirection = (transform.position - Target.Value.position).normalized;
+                Attack(attackDirection);
             }
             
         }
     }
     
-    void Attack()
+    public virtual void Attack(Vector3 attackDirection)
     {
         
-        Vector3 attackDirection = (transform.position - Target.Value.position).normalized;
         GameObject projectile = Instantiate(ProjectilePrefab, transform.position - attackDirection, Quaternion.identity) as GameObject;
         ProjectileMovement mov = projectile.GetComponent<ProjectileMovement>();
         mov.Rotate(attackDirection);

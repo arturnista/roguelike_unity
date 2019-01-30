@@ -17,6 +17,10 @@ public class PlayerShield : MonoBehaviour
     [Header("Variables")]
     [SerializeField]
     protected FloatReference MoveSpeed;
+    [SerializeField]
+    protected Vector2Reference Velocity;
+    [SerializeField]
+    protected DamageEvent ShieldBlockEvent;
 #endregion
 
     private bool isShieldActive;
@@ -26,6 +30,16 @@ public class PlayerShield : MonoBehaviour
     {
         shield = transform.Find("PlayerShield");
         DeactivateShield();
+    }
+
+    void OnEnable()
+    {
+        ShieldBlockEvent.Actions += ShieldBlock;
+    }
+
+    void OnDisable()
+    {
+        ShieldBlockEvent.Actions -= ShieldBlock;
     }
 
     void Update()
@@ -55,6 +69,11 @@ public class PlayerShield : MonoBehaviour
         isShieldActive = false;
         shield.gameObject.SetActive(false);
         MoveSpeed.ResetValue();
+    }
+
+    void ShieldBlock()
+    {
+        Velocity.Value += (-ShieldBlockEvent.Hit.normal * ShieldBlockEvent.Damage) * Inventory.CurrentShield.DamageMultiplier;
     }
 
 }

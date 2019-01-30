@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68ad3eede4faf643b20385a7e5f01bd, type: 3}
+  m_Name: _ArrowShooter
+  m_EditorClassIdentifier: 
+  Data:
+  - Name: {fileID: 11400000, guid: 314d6a971184a9a4292693c196036c70, type: 2}
+    Variable: {fileID: 11400000, guid: 97beb7ace01e05644ae44ce05d5af728, type: 2}
+  - Name: {fileID: 11400000, guid: e7aa9d0e5d293944a942f303776b1b08, type: 2}
+    Variable: {fileID: 11400000, guid: 4be730ac3418b9c4db6568bc00989711, type: 2}
+  - Name: {fileID: 11400000, guid: 6084877ad5ebd7342b525912516ed8bb, type: 2}
+    Variable: {fileID: 11400000, guid: 4393cbf19386c11488967722e869e29a, type: 2}
+  - Name: {fileID: 11400000, guid: 689468fc7ac718445a07317e8229086f, type: 2}
+    Variable: {fileID: 11400000, guid: 1747d2cf4cb4d4c4093ad05ba0f0edf4, type: 2}
+  - Name: {fileID: 11400000, guid: dc7fa9ff2788e6349aa7807c8932c445, type: 2}
+    Variable: {fileID: 11400000, guid: 621a0a7aa21ef6d4f885c44a5b9b47d6, type: 2}
+  - Name: {fileID: 11400000, guid: c20b5cd6d3b1fa6419077a3e4625aee6, type: 2}
+    Variable: {fileID: 11400000, guid: a35f857c80352d043a4ab63756f210f5, type: 2}
+  - Name: {fileID: 11400000, guid: 45080d20cab46824d918402ea1bcc0e5, type: 2}
+    Variable: {fileID: 11400000, guid: 3658eb03a500b8b4daacb7ee81d00326, type: 2}
+  - Name: {fileID: 11400000, guid: 520ecb18d3a88e045a2f959648329d43, type: 2}
+    Variable: {fileID: 11400000, guid: 77de959911cea7f4881a31a9a07bc6e3, type: 2}
+  first: 0

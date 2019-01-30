@@ -17,8 +17,8 @@ public class Switch : Attackable
     public int InitialAction = 0;
     public List<SwitchAction> Actions;
 
-    private SpriteRenderer spriteRenderer;
-    private int currentActionIndex;
+    protected SpriteRenderer spriteRenderer;
+    protected int currentActionIndex;
 
     void Awake()
     {
@@ -30,12 +30,12 @@ public class Switch : Attackable
         DispatchAction(InitialAction);        
     }
 
-    void DispatchNextAction()
+    protected virtual void DispatchNextAction()
     {
         DispatchAction((currentActionIndex + 1) % Actions.Count);
     }
 
-    void DispatchAction(int index)
+    protected virtual void DispatchAction(int index)
     {
         currentActionIndex = index;
         SwitchAction action = Actions[currentActionIndex];

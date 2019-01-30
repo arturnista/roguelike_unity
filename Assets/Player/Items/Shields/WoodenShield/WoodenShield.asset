@@ -15,4 +15,4 @@ MonoBehaviour:
   Name: Wooden shield
   Description: Simple shiled build using old wood
   MoveSpeedMultiplier: 0.8
-  DamageKnockbackReceive: 0.2
+  DamageKnockbackReceive: 0.05

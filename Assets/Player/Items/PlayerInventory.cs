@@ -8,5 +8,6 @@ public class PlayerInventory : ScriptableObject
     
     public SwordData CurrentSword;
     public ShieldData CurrentShield;
+    public List<ItemKey> Keys = new List<ItemKey>();
 
 }

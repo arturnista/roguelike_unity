@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5043665451636112158
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6089205348562668976, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: m_Name
+      value: TutorialSkeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064549599853312193, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: Holder
+      value: 
+      objectReference: {fileID: 11400000, guid: c611f9e9efaa6284e903c724e56bdc38,
+        type: 2}
+    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: Direction.HolderRegister
+      value: 
+      objectReference: {fileID: 4050157547758568415}
+    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: Velocity.HolderRegister
+      value: 
+      objectReference: {fileID: 4050157547758568415}
+    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: DesirableVelocity.HolderRegister
+      value: 
+      objectReference: {fileID: 4050157547758568415}
+    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: UnableToMove.HolderRegister
+      value: 
+      objectReference: {fileID: 4050157547758568415}
+    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: Target.HolderRegister
+      value: 
+      objectReference: {fileID: 4050157547758568415}
+    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: Health.HolderRegister
+      value: 
+      objectReference: {fileID: 4050157547758568415}
+    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: Velocity.HolderRegister
+      value: 
+      objectReference: {fileID: 4050157547758568415}
+    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: Target.HolderRegister
+      value: 
+      objectReference: {fileID: 4050157547758568415}
+    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: AttackDelay.HolderRegister
+      value: 
+      objectReference: {fileID: 4050157547758568415}
+    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: MaxHealth.Variable
+      value: 
+      objectReference: {fileID: 11400000, guid: c12bbdb5c7d061943992357ff09bdb4a,
+        type: 2}
+    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: AttackDelay.HolderRegister
+      value: 
+      objectReference: {fileID: 4050157547758568415}
+    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: Target.HolderRegister
+      value: 
+      objectReference: {fileID: 4050157547758568415}
+    - target: {fileID: 6091207565806071431, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+        type: 3}
+      propertyPath: Target.HolderRegister
+      value: 
+      objectReference: {fileID: 4050157547758568415}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d3f45d4d51c45c4a8c93eab09eb8698, type: 3}
+--- !u!114 &4050157547758568415 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9064549599853312193, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
+    type: 3}
+  m_PrefabInstance: {fileID: 5043665451636112158}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780909e2c1d3adb43bf4aa1e07b59b6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

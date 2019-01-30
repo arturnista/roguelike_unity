@@ -15,7 +15,8 @@ public class ShieldData : ScriptableObject
     [Range(0f, 2f)]
     public float MoveSpeedMultiplier = 1f;
     [SerializeField]
-    [Range(0f, 2f)]
+    [Range(0f, 1f)]
     public float DamageKnockbackReceive = 0f;
+    public float DamageMultiplier { get { return 1 - DamageKnockbackReceive; } }
 
 }

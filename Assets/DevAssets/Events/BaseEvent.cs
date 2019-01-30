@@ -6,12 +6,12 @@ using UnityEngine;
 public class BaseEvent : ScriptableObject
 {
 
-    public delegate void EventFunction(BaseEvent eventData);
+    public delegate void EventFunction();
     public EventFunction Actions;
 
     public void Dispatch()
     {
-        Actions(this);
+        Actions();
     }
 
 }
