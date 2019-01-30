@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destructible : MonoBehaviour
+public class Destructible : Attackable
 {
 
 #region Configuration
@@ -22,12 +22,6 @@ public class Destructible : MonoBehaviour
     public Vector2Reference Velocity;
 #endregion
 
-#region Effects
-    [Header("Effects")]
-    [SerializeField]
-    private GameObject ImpactEffect;
-#endregion
-
     void Start()
     {
         if(StartWithMaxHealth) Health.Value = MaxHealth.Value;
@@ -39,9 +33,9 @@ public class Destructible : MonoBehaviour
         if(Health.Value > MaxHealth.Value) Health.Value = MaxHealth.Value;
     }
 
-    public virtual void DealDamage(float damage, RaycastHit2D hit, Transform damager) 
+    public override void DealDamage(float damage, RaycastHit2D hit, Transform damager) 
     {
-        if(ImpactEffect) Instantiate(ImpactEffect, hit.point, Quaternion.identity);
+        base.DealDamage(damage, hit, damager);
         if(Velocity) Velocity.Value += -hit.normal * damage;
 
         float fullDamage = damage * Resistence.Value;

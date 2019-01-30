@@ -27,7 +27,7 @@ public class ProjectileDamage : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         
-        Destructible target = collider.GetComponent<Destructible>();    
+        Attackable target = collider.GetComponent<Attackable>();    
         if(target)
         {
             RaycastHit2D hit = Physics2D.Linecast(transform.position, target.transform.position);

@@ -239,6 +239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2040ffd18edc37243b2daabdb8603edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ImpactEffect: {fileID: 6345980741963220887, guid: c5d0b6c491d05444ebf74288b12c1f57,
+    type: 3}
   MaxHealth:
     Type: 1
     ConstantValue: 100
@@ -264,8 +266,6 @@ MonoBehaviour:
     Variable: {fileID: 0}
     HolderDataName: {fileID: 11400000, guid: 314d6a971184a9a4292693c196036c70, type: 2}
     HolderRegister: {fileID: 9064549599853312193}
-  ImpactEffect: {fileID: 476582336847252379, guid: e6fec3bdf64353d4f836a1588bfde6e0,
-    type: 3}
   Target:
     Type: 2
     ConstantValue: {fileID: 0}
