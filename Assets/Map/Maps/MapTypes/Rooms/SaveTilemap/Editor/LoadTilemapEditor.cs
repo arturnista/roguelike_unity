@@ -14,7 +14,7 @@ public class LoadTilemapEditor : Editor
         LoadTilemap LoadTilemap = (LoadTilemap)target;
         if(GUILayout.Button("Load data"))
         {
-            LoadTilemap.LoadData();
+            LoadTilemap.LoadData(Vector2Int.zero);
         }
         if(GUILayout.Button("Clear data"))
         {

@@ -13,30 +13,25 @@ public class MapModular : Map {
 
         base.Create(parent);
 
-        CreateRoom(parent, Vector3.zero, 4);
+        CreateRoom(parent, Vector2Int.zero, 3);
         
     }
 
-    void CreateRoom(Transform parent, Vector3 originPosition, int amount)
+    void CreateRoom(Transform parent, Vector2Int originPosition, int amount)
     {
         
         if(amount <= 0) return;
 
-        GameObject roomInstance = new GameObject();
-        LoadTilemap load = roomInstance.AddComponent<LoadTilemap>();
+        LoadTilemap load = parent.gameObject.AddComponent<LoadTilemap>();
         MapSaveData data = RoomsData[Random.Range(0, RoomsData.Length)];
-        roomInstance.name = data.name;
+        parent.gameObject.name = data.name;
         load.MapData = data;
-        load.ClearData();
-        load.LoadData();
+        load.LoadData(originPosition);
 
-        Vector3 roomPosition = new Vector3(
-            0f, 
-            0f, 
-            0f
+        Vector2Int roomPosition = new Vector2Int(
+            originPosition.x + data.TopRight.x, 
+            originPosition.y
         );
-        roomInstance.transform.position = roomPosition;
-        roomInstance.transform.parent = parent;
 
         for (int i = 0; i < amount; i++) CreateRoom(parent, roomPosition, amount - 1);
 

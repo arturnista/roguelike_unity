@@ -10,8 +10,8 @@ public class SaveTilemap : MonoBehaviour
 
     public void SaveData()
     {
-        
-        MapData.Layers.Clear();
+        if(MapData.Layers == null) MapData.Layers = new List<MapLayer>();
+        else MapData.Layers.Clear();
 
         Tilemap[] allTilemaps = GetComponentsInChildren<Tilemap>();
         foreach(Tilemap tilemap in allTilemaps)
@@ -29,31 +29,29 @@ public class SaveTilemap : MonoBehaviour
             );
             
             BoundsInt bounds = tilemap.cellBounds;
-            Debug.Log(bounds.size);
-            Debug.Log(bounds.min);
-            Debug.Log(bounds.max);
-            Debug.Log(bounds.center);
-            Debug.Log(bounds.position);
+            Debug.Log("size: " + bounds.size);
+            Debug.Log("min: " + bounds.min);
+            Debug.Log("max: " + bounds.max);
+            Debug.Log("center: " + bounds.center);
+            Debug.Log("position: " + bounds.position);
+            Debug.Log("origin: " + tilemap.origin);
             Debug.Log("================");
             
-            TileBase[] allTiles = tilemap.GetTilesBlock(bounds);
+            for (int x = bounds.min.x; x < bounds.max.x; x++)
+            {
+                for (int y = bounds.min.y; y < bounds.max.y; y++)
+                {
+                    Vector3Int tilePosition = new Vector3Int(x, y, 0);
+                    if (tilemap.HasTile(tilePosition))
+                    {
+                        TileBase tile = tilemap.GetTile(tilePosition);
+                        Vector2Int tileSavePosition = new Vector2Int(x, y);
 
-            for (int x = 0; x < bounds.size.x; x++) {
-                for (int y = 0; y < bounds.size.y; y++) {
-                    TileBase tile = allTiles[x + y * bounds.size.x];
-                    if (tile != null) {
+                        Debug.Log(layer.Name + " :: " + tile.name + " :: " + tileSavePosition.x + ", " + tileSavePosition.y + " :: " + x + ", " + y);
+                        if(tileSavePosition.x > MapData.TopRight.x) MapData.TopRight.x = tileSavePosition.x;
+                        if(tileSavePosition.y > MapData.TopRight.y) MapData.TopRight.y = tileSavePosition.y;
 
-                        // int xTile = x + bounds.max.x - Mathf.Abs( bounds.min.x );
-                        // int yTile = y + bounds.max.y - Mathf.Abs( bounds.min.y );
-                        int xTile = (int)bounds.center.x + x;
-                        int yTile = (int)bounds.center.y + y;
-                        Vector2Int tilePosition = new Vector2Int(xTile, yTile);
-
-                        Debug.Log(layer.Name + " :: " + tile.name + " :: " + tilePosition.x + ", " + tilePosition.y + " :: " + x + ", " + y);
-                        if(tilePosition.x > MapData.TopRight.x) MapData.TopRight.x = tilePosition.x;
-                        if(tilePosition.y > MapData.TopRight.y) MapData.TopRight.y = tilePosition.y;
-
-                        MapTile mapTile = new MapTile(tilePosition, tile);
+                        MapTile mapTile = new MapTile(tileSavePosition, tile);
                         layer.Tiles.Add(mapTile);
 
                     }

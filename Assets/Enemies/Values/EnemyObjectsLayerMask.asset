@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a787eca27e4ffa449f335a9f4617c82, type: 3}
   m_Name: EnemyObjectsLayerMask
   m_EditorClassIdentifier: 
-  Description: Layer mask to select what will be considered to determine if there's an object between the enemy and his target.
+  Description: Layer mask to select what will be considered to determine if there's
+    an object between the enemy and his target.
   DefaultValue:
     serializedVersion: 2
-    m_Bits: 1792
+    m_Bits: 1536
   ResetOnPlay: 1
   value:
     serializedVersion: 2
-    m_Bits: 1792
+    m_Bits: 1536

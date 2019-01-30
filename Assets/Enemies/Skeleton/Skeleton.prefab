@@ -264,7 +264,8 @@ MonoBehaviour:
     Variable: {fileID: 0}
     HolderDataName: {fileID: 11400000, guid: 314d6a971184a9a4292693c196036c70, type: 2}
     HolderRegister: {fileID: 9064549599853312193}
-  ImpactEffect: {fileID: 476582336847252379, guid: e6fec3bdf64353d4f836a1588bfde6e0, type: 3}
+  ImpactEffect: {fileID: 476582336847252379, guid: e6fec3bdf64353d4f836a1588bfde6e0,
+    type: 3}
   Target:
     Type: 2
     ConstantValue: {fileID: 0}
@@ -295,7 +296,8 @@ MonoBehaviour:
     Variable: {fileID: 11400000, guid: 0c4a9c653a4f11c4091c8ab522eb85fc, type: 2}
     HolderDataName: {fileID: 0}
     HolderRegister: {fileID: 0}
-  ProjectilePrefab: {fileID: 6962232131117010515, guid: bc2432ff26f5ab04b89e7f1fb28b03f2, type: 3}
+  ProjectilePrefab: {fileID: 6962232131117010515, guid: bc2432ff26f5ab04b89e7f1fb28b03f2,
+    type: 3}
   AttackDelay:
     Type: 2
     ConstantValue: 0
@@ -319,7 +321,7 @@ GameObject:
   - component: {fileID: 574272805042730807}
   - component: {fileID: 2996533044546270441}
   - component: {fileID: 6091207565806071431}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: TargetDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}

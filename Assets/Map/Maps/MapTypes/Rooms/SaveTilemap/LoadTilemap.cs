@@ -8,7 +8,7 @@ public class LoadTilemap : MonoBehaviour
     
     public MapSaveData MapData;
     
-    public void LoadData()
+    public void LoadData(Vector2Int basePosition)
     {
         // Get or Create the GRID
         Grid grid = GetComponent<Grid>();
@@ -59,7 +59,7 @@ public class LoadTilemap : MonoBehaviour
             // Set the tiles
             foreach (MapTile tile in layer.Tiles)
             {
-                tilemap.SetTile(tile.WorldPosition, tile.Tile);
+                tilemap.SetTile((Vector3Int)basePosition + tile.WorldPosition, tile.Tile);
             }
         }
 
