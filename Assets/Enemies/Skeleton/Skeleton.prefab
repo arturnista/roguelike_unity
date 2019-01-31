@@ -227,6 +227,14 @@ MonoBehaviour:
     Variable: {fileID: 11400000, guid: 0c4a9c653a4f11c4091c8ab522eb85fc, type: 2}
     HolderDataName: {fileID: 0}
     HolderRegister: {fileID: 0}
+  ObstacleLayer:
+    Type: 1
+    ConstantValue:
+      serializedVersion: 2
+      m_Bits: 0
+    Variable: {fileID: 11400000, guid: f40f467f2e89c30428042e47cd303fb2, type: 2}
+    HolderDataName: {fileID: 0}
+    HolderRegister: {fileID: 0}
 --- !u!114 &3835534312724097848
 MonoBehaviour:
   m_ObjectHideFlags: 0

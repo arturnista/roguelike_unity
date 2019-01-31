@@ -369,6 +369,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8004170697632221693, guid: f5fa0306bd8a4a64aa35db8c0807fd45,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[8].second.m_TileSpriteIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004170697632221693, guid: f5fa0306bd8a4a64aa35db8c0807fd45,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[0].m_RefCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004170697632221693, guid: f5fa0306bd8a4a64aa35db8c0807fd45,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[0].m_Data
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004170697632221693, guid: f5fa0306bd8a4a64aa35db8c0807fd45,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[8].m_RefCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004170697632221693, guid: f5fa0306bd8a4a64aa35db8c0807fd45,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[8].m_Data
+      value: 
+      objectReference: {fileID: 21300520, guid: a770fa306ff7aef49ae55486dbc8d3a9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5fa0306bd8a4a64aa35db8c0807fd45, type: 3}
 --- !u!1001 &4150661908189470017
