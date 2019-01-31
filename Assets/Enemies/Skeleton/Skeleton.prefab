@@ -186,11 +186,11 @@ MonoBehaviour:
     HolderDataName: {fileID: 0}
     HolderRegister: {fileID: 0}
   MoveSpeed:
-    Type: 1
+    Type: 2
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 38a67252137d13b40ac5e323714fec0a, type: 2}
-    HolderDataName: {fileID: 0}
-    HolderRegister: {fileID: 0}
+    HolderDataName: {fileID: 11400000, guid: 603decc6c3aab6c419143386b902f32d, type: 2}
+    HolderRegister: {fileID: 9064549599853312193}
   Direction:
     Type: 2
     ConstantValue: {x: 0, y: 0}
@@ -235,6 +235,7 @@ MonoBehaviour:
     Variable: {fileID: 11400000, guid: f40f467f2e89c30428042e47cd303fb2, type: 2}
     HolderDataName: {fileID: 0}
     HolderRegister: {fileID: 0}
+  target: {fileID: 0}
 --- !u!114 &3835534312724097848
 MonoBehaviour:
   m_ObjectHideFlags: 0

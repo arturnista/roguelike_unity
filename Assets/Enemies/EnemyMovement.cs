@@ -44,6 +44,7 @@ public class EnemyMovement : UnitMovement
     protected override void Update()
     {
         base.Update();
+
         Vector2 targetDirection;
 
         if(Target.Value)
@@ -80,8 +81,11 @@ public class EnemyMovement : UnitMovement
 
     void OnChangeTarget(Transform oldTarget)
     {
-        StopCoroutine(changeDirectionCoroutine);
-        StartCoroutine(ChangeTargetPosition());
+        if(oldTarget == null)
+        {
+            StopCoroutine(changeDirectionCoroutine);
+            StartCoroutine(ChangeTargetPosition());
+        }
 
         MoveSpeed.ResetValue();
     }

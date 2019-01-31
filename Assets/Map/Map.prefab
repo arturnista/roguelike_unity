@@ -1894,7 +1894,7 @@ Tilemap:
   - first: {x: -2, y: -16, z: 0}
     second:
       m_TileIndex: 1
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -2237,8 +2237,8 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: aecdee12b0cacb347949c297a2a70ad2, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: 21300520, guid: a770fa306ff7aef49ae55486dbc8d3a9, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 21300534, guid: a770fa306ff7aef49ae55486dbc8d3a9, type: 3}
   - m_RefCount: 1
@@ -2253,8 +2253,8 @@ Tilemap:
     m_Data: {fileID: 21300410, guid: a770fa306ff7aef49ae55486dbc8d3a9, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 21300408, guid: a770fa306ff7aef49ae55486dbc8d3a9, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300520, guid: a770fa306ff7aef49ae55486dbc8d3a9, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300382, guid: a770fa306ff7aef49ae55486dbc8d3a9, type: 3}
   - m_RefCount: 1
@@ -19189,63 +19189,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 467537377745926859, guid: c052428daa67561478f4adab9750476d,
         type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 712549218871510395}
-    - target: {fileID: 467537377745926859, guid: c052428daa67561478f4adab9750476d,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 712549218871510395}
-    - target: {fileID: 467537377745926859, guid: c052428daa67561478f4adab9750476d,
-        type: 3}
       propertyPath: AttackDirection.ConstantValue.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 999426894354257569, guid: c052428daa67561478f4adab9750476d,
-        type: 3}
-      propertyPath: MaxHealth.HolderRegister
-      value: 
-      objectReference: {fileID: 712549218871510395}
-    - target: {fileID: 999426894354257569, guid: c052428daa67561478f4adab9750476d,
-        type: 3}
-      propertyPath: Resistence.HolderRegister
-      value: 
-      objectReference: {fileID: 712549218871510395}
-    - target: {fileID: 999426894354257569, guid: c052428daa67561478f4adab9750476d,
-        type: 3}
-      propertyPath: Health.HolderRegister
-      value: 
-      objectReference: {fileID: 712549218871510395}
-    - target: {fileID: 999426894354257569, guid: c052428daa67561478f4adab9750476d,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 712549218871510395}
-    - target: {fileID: 999426894354257569, guid: c052428daa67561478f4adab9750476d,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 712549218871510395}
-    - target: {fileID: 999426894354257569, guid: c052428daa67561478f4adab9750476d,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 712549218871510395}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c052428daa67561478f4adab9750476d, type: 3}
---- !u!114 &712549218871510395 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 836687076921084405, guid: c052428daa67561478f4adab9750476d,
-    type: 3}
-  m_PrefabInstance: {fileID: 180137164348787854}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780909e2c1d3adb43bf4aa1e07b59b6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &4074929412387004918 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4247729519198563704, guid: c052428daa67561478f4adab9750476d,
@@ -20133,66 +20081,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Direction.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262769088521}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262769088521}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: DesirableVelocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262769088521}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: UnableToMove.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262769088521}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262769088521}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Health.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262769088521}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262769088521}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262769088521}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262769088521}
-    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262769088521}
-    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262769088521}
-    - target: {fileID: 6091207565806071431, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262769088521}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d3f45d4d51c45c4a8c93eab09eb8698, type: 3}
 --- !u!4 &6970712674346409343 stripped
@@ -20201,18 +20089,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3764382833490497736}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5329581262769088521 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9064549599853312193, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-    type: 3}
-  m_PrefabInstance: {fileID: 3764382833490497736}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780909e2c1d3adb43bf4aa1e07b59b6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3764382834521495507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20280,66 +20156,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Direction.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261781544722}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261781544722}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: DesirableVelocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261781544722}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: UnableToMove.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261781544722}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261781544722}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Health.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261781544722}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261781544722}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261781544722}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261781544722}
-    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261781544722}
-    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261781544722}
-    - target: {fileID: 6091207565806071431, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261781544722}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d3f45d4d51c45c4a8c93eab09eb8698, type: 3}
 --- !u!4 &6970712675513260644 stripped
@@ -20348,18 +20164,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3764382834521495507}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5329581261781544722 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9064549599853312193, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-    type: 3}
-  m_PrefabInstance: {fileID: 3764382834521495507}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780909e2c1d3adb43bf4aa1e07b59b6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3764382834668812925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20427,80 +20231,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Direction.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261934117564}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261934117564}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: DesirableVelocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261934117564}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: UnableToMove.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261934117564}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261934117564}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Health.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261934117564}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261934117564}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261934117564}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261934117564}
-    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261934117564}
-    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261934117564}
-    - target: {fileID: 6091207565806071431, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261934117564}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d3f45d4d51c45c4a8c93eab09eb8698, type: 3}
---- !u!114 &5329581261934117564 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9064549599853312193, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-    type: 3}
-  m_PrefabInstance: {fileID: 3764382834668812925}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780909e2c1d3adb43bf4aa1e07b59b6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &6970712675634362314 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
@@ -20574,80 +20306,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Direction.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262072678337}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262072678337}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: DesirableVelocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262072678337}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: UnableToMove.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262072678337}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262072678337}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Health.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262072678337}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262072678337}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262072678337}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262072678337}
-    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262072678337}
-    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262072678337}
-    - target: {fileID: 6091207565806071431, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581262072678337}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d3f45d4d51c45c4a8c93eab09eb8698, type: 3}
---- !u!114 &5329581262072678337 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9064549599853312193, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-    type: 3}
-  m_PrefabInstance: {fileID: 3764382834807144192}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780909e2c1d3adb43bf4aa1e07b59b6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &6970712674690495159 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6089205348562668983, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
@@ -20721,66 +20381,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Direction.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261984905797}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261984905797}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: DesirableVelocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261984905797}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: UnableToMove.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261984905797}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261984905797}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Health.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261984905797}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261984905797}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261984905797}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261984905797}
-    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261984905797}
-    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261984905797}
-    - target: {fileID: 6091207565806071431, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5329581261984905797}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d3f45d4d51c45c4a8c93eab09eb8698, type: 3}
 --- !u!4 &6970712674642874163 stripped
@@ -20789,18 +20389,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3764382834854871684}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5329581261984905797 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9064549599853312193, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-    type: 3}
-  m_PrefabInstance: {fileID: 3764382834854871684}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780909e2c1d3adb43bf4aa1e07b59b6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4278352989646459605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20808,11 +20396,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8092072803399192896}
     m_Modifications:
-    - target: {fileID: 401505822503728028, guid: df56edb2cf18af6468d506a21a8ce363,
-        type: 3}
-      propertyPath: m_Name
-      value: KeyGate
-      objectReference: {fileID: 0}
     - target: {fileID: 1754316662411325513, guid: df56edb2cf18af6468d506a21a8ce363,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20867,6 +20450,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401505822503728028, guid: df56edb2cf18af6468d506a21a8ce363,
+        type: 3}
+      propertyPath: m_Name
+      value: KeyGate
       objectReference: {fileID: 0}
     - target: {fileID: 2031034785460191279, guid: df56edb2cf18af6468d506a21a8ce363,
         type: 3}
@@ -21240,12 +20828,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81baf7a971d4ab44ba47049306568837, type: 3}
---- !u!4 &5877270829007827463 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1754316662411325513, guid: 81baf7a971d4ab44ba47049306568837,
-    type: 3}
-  m_PrefabInstance: {fileID: 5316735873848803918}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4726287678216744608 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 603467513426062574, guid: 81baf7a971d4ab44ba47049306568837,
@@ -21258,6 +20840,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1468c8344dcdbc94d8b10df1c9094e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &5877270829007827463 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1754316662411325513, guid: 81baf7a971d4ab44ba47049306568837,
+    type: 3}
+  m_PrefabInstance: {fileID: 5316735873848803918}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5438619946170266661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21425,11 +21013,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1053940258484250551}
     m_Modifications:
-    - target: {fileID: 1331949390299100191, guid: 17a3a337d281dfd45ba6a10a3f4edc45,
-        type: 3}
-      propertyPath: m_Name
-      value: RedKeyItem
-      objectReference: {fileID: 0}
     - target: {fileID: 1303945071606597502, guid: 17a3a337d281dfd45ba6a10a3f4edc45,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21484,6 +21067,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331949390299100191, guid: 17a3a337d281dfd45ba6a10a3f4edc45,
+        type: 3}
+      propertyPath: m_Name
+      value: RedKeyItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a3a337d281dfd45ba6a10a3f4edc45, type: 3}
@@ -21635,66 +21223,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Direction.HolderRegister
-      value: 
-      objectReference: {fileID: 2123251422954469469}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 2123251422954469469}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: DesirableVelocity.HolderRegister
-      value: 
-      objectReference: {fileID: 2123251422954469469}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: UnableToMove.HolderRegister
-      value: 
-      objectReference: {fileID: 2123251422954469469}
-    - target: {fileID: 185892160838529329, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 2123251422954469469}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Health.HolderRegister
-      value: 
-      objectReference: {fileID: 2123251422954469469}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 2123251422954469469}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 2123251422954469469}
-    - target: {fileID: 3835534312724097848, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 2123251422954469469}
-    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 2123251422954469469}
-    - target: {fileID: 9219319523459198647, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 2123251422954469469}
-    - target: {fileID: 6091207565806071431, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 2123251422954469469}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d3f45d4d51c45c4a8c93eab09eb8698, type: 3}
 --- !u!4 &3764382833466789163 stripped
@@ -21703,18 +21231,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6970712674420211868}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2123251422954469469 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9064549599853312193, guid: 0d3f45d4d51c45c4a8c93eab09eb8698,
-    type: 3}
-  m_PrefabInstance: {fileID: 6970712674420211868}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780909e2c1d3adb43bf4aa1e07b59b6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7032351307191635510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21797,11 +21313,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6646145046207957185}
     m_Modifications:
-    - target: {fileID: 1260874862806873774, guid: 94490b11f634dcb4eab50feca981e05f,
-        type: 3}
-      propertyPath: m_Name
-      value: TutorialSkeleton
-      objectReference: {fileID: 0}
     - target: {fileID: 1260874862806873769, guid: 94490b11f634dcb4eab50feca981e05f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21857,66 +21368,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5146164041204451887, guid: 94490b11f634dcb4eab50feca981e05f,
+    - target: {fileID: 1260874862806873774, guid: 94490b11f634dcb4eab50feca981e05f,
         type: 3}
-      propertyPath: Direction.HolderRegister
-      value: 
-      objectReference: {fileID: 5060516873166572359}
-    - target: {fileID: 5146164041204451887, guid: 94490b11f634dcb4eab50feca981e05f,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5060516873166572359}
-    - target: {fileID: 5146164041204451887, guid: 94490b11f634dcb4eab50feca981e05f,
-        type: 3}
-      propertyPath: DesirableVelocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5060516873166572359}
-    - target: {fileID: 5146164041204451887, guid: 94490b11f634dcb4eab50feca981e05f,
-        type: 3}
-      propertyPath: UnableToMove.HolderRegister
-      value: 
-      objectReference: {fileID: 5060516873166572359}
-    - target: {fileID: 5146164041204451887, guid: 94490b11f634dcb4eab50feca981e05f,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5060516873166572359}
-    - target: {fileID: 8125686851220787238, guid: 94490b11f634dcb4eab50feca981e05f,
-        type: 3}
-      propertyPath: Health.HolderRegister
-      value: 
-      objectReference: {fileID: 5060516873166572359}
-    - target: {fileID: 8125686851220787238, guid: 94490b11f634dcb4eab50feca981e05f,
-        type: 3}
-      propertyPath: Velocity.HolderRegister
-      value: 
-      objectReference: {fileID: 5060516873166572359}
-    - target: {fileID: 8125686851220787238, guid: 94490b11f634dcb4eab50feca981e05f,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5060516873166572359}
-    - target: {fileID: 8125686851220787238, guid: 94490b11f634dcb4eab50feca981e05f,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 5060516873166572359}
-    - target: {fileID: 4183607949948999081, guid: 94490b11f634dcb4eab50feca981e05f,
-        type: 3}
-      propertyPath: AttackDelay.HolderRegister
-      value: 
-      objectReference: {fileID: 5060516873166572359}
-    - target: {fileID: 4183607949948999081, guid: 94490b11f634dcb4eab50feca981e05f,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5060516873166572359}
-    - target: {fileID: 1258441649879831961, guid: 94490b11f634dcb4eab50feca981e05f,
-        type: 3}
-      propertyPath: Target.HolderRegister
-      value: 
-      objectReference: {fileID: 5060516873166572359}
+      propertyPath: m_Name
+      value: TutorialSkeleton
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94490b11f634dcb4eab50feca981e05f, type: 3}
 --- !u!4 &8029947400126742065 stripped
@@ -21925,15 +21381,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 9083652268690147480}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5060516873166572359 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4050157547758568415, guid: 94490b11f634dcb4eab50feca981e05f,
-    type: 3}
-  m_PrefabInstance: {fileID: 9083652268690147480}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780909e2c1d3adb43bf4aa1e07b59b6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
