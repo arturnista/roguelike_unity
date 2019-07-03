@@ -45,6 +45,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -56,6 +57,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -235,7 +237,6 @@ MonoBehaviour:
     Variable: {fileID: 11400000, guid: f40f467f2e89c30428042e47cd303fb2, type: 2}
     HolderDataName: {fileID: 0}
     HolderRegister: {fileID: 0}
-  target: {fileID: 0}
 --- !u!114 &3835534312724097848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,6 +308,11 @@ MonoBehaviour:
     HolderRegister: {fileID: 0}
   ProjectilePrefab: {fileID: 6962232131117010515, guid: bc2432ff26f5ab04b89e7f1fb28b03f2,
     type: 3}
+  AttackDelayRange:
+    Type: 1
+    ConstantMinValue: 0
+    ConstantMaxValue: 0
+    Variable: {fileID: 11400000, guid: 78f794b6dc11ebf409cf95e7578f76d5, type: 2}
   AttackDelay:
     Type: 2
     ConstantValue: 0

@@ -6,8 +6,18 @@ using UnityEngine;
 public class PlayerInventory : ScriptableObject
 {
     
+    public bool Reset;
+
     public SwordData CurrentSword;
     public ShieldData CurrentShield;
     public List<ItemKey> Keys = new List<ItemKey>();
+
+    void OnEnable()
+    {
+        if (Reset)
+        {
+            Keys = new List<ItemKey>();
+        }
+    }
 
 }

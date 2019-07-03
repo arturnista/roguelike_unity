@@ -17,6 +17,11 @@ public class HUDHealthBarDisplay : MonoBehaviour
         image = GetComponent<Image>();
     }
 
+    void Start()
+    {
+        OnChangeHealth(0f);
+    }
+
     void OnEnable()
     {
         Health.OnChangeValue += this.OnChangeHealth;
@@ -30,7 +35,7 @@ public class HUDHealthBarDisplay : MonoBehaviour
     void OnChangeHealth(float lastValue)
     {
         float size = DisplayCurve.Evaluate(Health.Value / MaxHealth.Value);
-        image.rectTransform.localScale = new Vector3(size, 1f, 1f);
+        image.fillAmount = size;
     }
 
 }

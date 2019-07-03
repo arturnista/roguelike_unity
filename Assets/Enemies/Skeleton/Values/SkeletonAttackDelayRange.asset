@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3df5e0c2e12a7ce44a47a0348130063d, type: 3}
-  m_Name: PlayerInventory
+  m_Script: {fileID: 11500000, guid: 3d6017ca9de730642bf3b9b697305467, type: 3}
+  m_Name: SkeletonAttackDelayRange
   m_EditorClassIdentifier: 
-  Reset: 1
-  CurrentSword: {fileID: 11400000, guid: cd62c7037ff23da46a004d410b0dfe6b, type: 2}
-  CurrentShield: {fileID: 11400000, guid: 0329080e1e932104eb69ac60534fa547, type: 2}
-  Keys: []
+  Description: 
+  DefaultValue: 0
+  ResetOnPlay: 1
+  value: 0
+  MinDefaultValue: 4
+  MaxDefaultValue: 8

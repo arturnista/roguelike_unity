@@ -45,6 +45,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -56,6 +57,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -96,6 +98,7 @@ GameObject:
   - component: {fileID: 8731974200997013575}
   - component: {fileID: 3765784410234824714}
   - component: {fileID: 2149940010711029145}
+  - component: {fileID: 9025685977056730298}
   m_Layer: 19
   m_Name: Player
   m_TagString: Untagged
@@ -372,6 +375,18 @@ MonoBehaviour:
     HolderDataName: {fileID: 0}
     HolderRegister: {fileID: 0}
   ShieldBlockEvent: {fileID: 11400000, guid: f624401b7a37a8b4aa1202987892999e, type: 2}
+--- !u!114 &9025685977056730298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150661908869239629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01708734667a73841b02f1c74d67ef62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6659560437214029033
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +434,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -430,6 +446,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

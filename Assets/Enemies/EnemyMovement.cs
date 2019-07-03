@@ -45,19 +45,18 @@ public class EnemyMovement : UnitMovement
     {
         base.Update();
 
-        Vector2 targetDirection;
+        Vector3 referencePosition;
 
         if(Target.Value)
         {
-            Vector3 targetPosition = Target.Value.position + offsetPosition;
-            targetDirection = targetPosition - transform.position;
+            referencePosition = Target.Value.position;
         }
         else
         {
-            Vector3 targetPosition = originalPosition + offsetPosition;
-            targetDirection = targetPosition - transform.position;
+            referencePosition = originalPosition;
         }
 
+        Vector2 targetDirection = (referencePosition + offsetPosition) - transform.position;
         Direction.Value = targetDirection.normalized;
     }
 
@@ -65,7 +64,7 @@ public class EnemyMovement : UnitMovement
     {
         while (true)
         {
-            offsetPosition = (Vector3)Random.insideUnitCircle * 10f;
+            offsetPosition = (Vector3)Random.insideUnitCircle.normalized * 10f;
             yield return new WaitForSeconds(Random.Range(1f, 3f));
         }
     }
@@ -74,7 +73,7 @@ public class EnemyMovement : UnitMovement
     {
         while (true)
         {
-            offsetPosition = (Vector3)Random.insideUnitCircle * 5f;
+            offsetPosition = (Vector3)Random.insideUnitCircle.normalized * 5f;
             yield return new WaitForSeconds(Random.Range(8f, 12f));
         }
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyGate : Gate
+public class KeyGate : Gate, IUsable
 {
     
     public ItemKey RequiredKey;
@@ -13,18 +13,22 @@ public class KeyGate : Gate
         base.Awake();
         spriteRenderer.color = RequiredKey.Color;
     }
-    
-    void OnCollisionEnter2D(Collision2D collision)
+
+    public bool Use(Transform user)
     {
-        PlayerMovement player = collision.transform.GetComponent<PlayerMovement>();
+        PlayerMovement player = user.GetComponent<PlayerMovement>();
         if(player)
         {
             if(Inventory.Keys.Contains(RequiredKey))
             {
                 Open();
                 Inventory.Keys.Remove(RequiredKey);
+
+                return true;
             }
         }
+
+        return false;
     }
 
 }

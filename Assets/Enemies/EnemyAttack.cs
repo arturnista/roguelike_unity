@@ -11,6 +11,8 @@ public class EnemyAttack : MonoBehaviour
     public FloatReference AttackRange;
     [SerializeField]
     public GameObject ProjectilePrefab;
+    [SerializeField]
+    public FloatRangeReference AttackDelayRange;
 #endregion
 
 #region Variables
@@ -28,7 +30,7 @@ public class EnemyAttack : MonoBehaviour
             AttackDelay.Value -= Time.deltaTime;
             if(AttackDelay.Value < 0f)
             {
-                AttackDelay.ResetValue();
+                AttackDelay.Value = AttackDelayRange.RandomValue;
                 Vector3 attackDirection = (transform.position - Target.Value.position).normalized;
                 Attack(attackDirection);
             }

@@ -101,4 +101,9 @@ public class FloatRangeReference : System.Object
         }
     }
 
+    public float RandomValue
+    {
+        get { return Random.Range(MinValue, MaxValue); }
+    }
+
 }

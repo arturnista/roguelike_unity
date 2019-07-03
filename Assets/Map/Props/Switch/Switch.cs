@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Switch : Attackable
+public class Switch : Attackable, IUsable
 {
 
     [System.Serializable]
@@ -47,6 +47,12 @@ public class Switch : Attackable
     {
         base.DealDamage(damage, hit, damager);
         DispatchNextAction();
+    }
+
+    public bool Use(Transform user)
+    {
+        DispatchNextAction();
+        return true;
     }
 
 }
